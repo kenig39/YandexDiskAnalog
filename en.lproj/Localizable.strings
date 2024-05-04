@@ -1,0 +1,19 @@
+ "Войти" = "Enter";
+ "ДА"  = "YES";
+ "НЕТ" = "NO";
+"Выход" =  "Exit";
+"Отмена"   =  "Cancel";
+"Теперь все ваши документы в одном местe"  =  "Now you files in one plase";
+"Доступ к файлам без интернета"  = "Provide to files with out Internet";
+"Делитесь вашими фаилами с друзьями"  = "Files with friends";
+"Далее" = "Next";
+"Назад" = "Back";
+"Профиль" = "Profile";
+"Все файлы" = "All Files";
+"Последние файлы" = "Last Files";
+"Название файла" = "Name Files";
+"Вы уверенны что хотите выйти" = "You sure to want to exit";
+"Это сотрет все ваши данные" = "This action clear you data";
+"Войти с помощью яндекс"   = "Enter with yandex";
+
+

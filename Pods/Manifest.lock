@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.9.0)
+  - SnapKit (5.7.1)
+  - YandexLoginSDK (3.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - SnapKit
+  - YandexLoginSDK
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SnapKit
+    - YandexLoginSDK
+
+SPEC CHECKSUMS:
+  Alamofire: 02b772c9910e8eba1a079227c32fbd9e46c90a24
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
+  YandexLoginSDK: 89f4acbaf8a614a27414b8f5a8f3ca31326a566e
+
+PODFILE CHECKSUM: defac07ca5fd93d4b84ea49f6cf82363ccaa67d3
+
+COCOAPODS: 1.15.2

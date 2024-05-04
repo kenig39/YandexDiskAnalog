@@ -1,0 +1,6 @@
+framework module Pods_SkillBoxDisk_SkillBoxDiskUITests {
+  umbrella header "Pods-SkillBoxDisk-SkillBoxDiskUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_SkillBoxDisk {
+  umbrella header "Pods-SkillBoxDisk-umbrella.h"
+
+  export *
+  module * { export * }
+}

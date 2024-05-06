@@ -21,21 +21,22 @@ class AllFilesViewController: UIViewController {
         setupConstrains()
     }
     
-    @objc func refreshData() {
-        
-    }
+   
     
     private func setupUI() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UITableView.self, forCellReuseIdentifier: "")
-        
-        
-        
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "")
         refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
         
         
     }
+    
+    @objc func refreshData() {
+        
+    }
+    
+    
     private func setupConstrains() {
         
     }
@@ -44,11 +45,11 @@ class AllFilesViewController: UIViewController {
 extension AllFilesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: <#T##String#>)
     }
     
     

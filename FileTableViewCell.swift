@@ -41,19 +41,19 @@ final class FileTableViewCell: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    func bindModel(model: DiskFile){
-        fileNameLabel.text = model.name
-        let size = Double(model.size) / 1024.0 / 1024.0
-        fileSizeLabel.text = String(format: "%.2f", size) + " MB"
-        
-        if let previewUrl = model.preview{
-            delegate?.loadImage(stringUrl: previewUrl, complition: {
-                [weak self] (image) in
-                self?.photoImageView.image = image
-            })
-        }
-    }
+//    
+//    func bindModel(model: DiskFile){
+//        fileNameLabel.text = model.name
+//        let size = Double(model.size) / 1024.0 / 1024.0
+//        fileSizeLabel.text = String(format: "%.2f", size) + " MB"
+//        
+//        if let previewUrl = model.preview{
+//            delegate?.loadImage(stringUrl: previewUrl, complition: {
+//                [weak self] (image) in
+//                self?.photoImageView.image = image
+//            })
+//        }
+//    }
     
     func updateImage(_ image: UIImage?){
         photoImageView.image = image

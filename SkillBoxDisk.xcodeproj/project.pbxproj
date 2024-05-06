@@ -59,6 +59,7 @@
 		FAD26B492A9D17E7004BDB4C /* AboutPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26B482A9D17E7004BDB4C /* AboutPersonViewController.swift */; };
 		FAD26B4B2A9D1808004BDB4C /* LastFilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26B4A2A9D1808004BDB4C /* LastFilesViewController.swift */; };
 		FAD26B4F2A9D3A46004BDB4C /* TapBarRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26B4E2A9D3A46004BDB4C /* TapBarRoute.swift */; };
+		FAD309B82BE6CCFC00867460 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD309B72BE6CCFC00867460 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +142,7 @@
 		FAD26B482A9D17E7004BDB4C /* AboutPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPersonViewController.swift; sourceTree = "<group>"; };
 		FAD26B4A2A9D1808004BDB4C /* LastFilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFilesViewController.swift; sourceTree = "<group>"; };
 		FAD26B4E2A9D3A46004BDB4C /* TapBarRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBarRoute.swift; sourceTree = "<group>"; };
+		FAD309B72BE6CCFC00867460 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +252,8 @@
 		FAD26ACA2A9CC5F4004BDB4C = {
 			isa = PBXGroup;
 			children = (
+				FAD26AD52A9CC5F4004BDB4C /* SkillBoxDisk */,
+				FAD309B72BE6CCFC00867460 /* Model.swift */,
 				FA3CC6EB2B409EDD00CF214C /* AuthorizationGroup */,
 				FA45EE042AA9D021005785A2 /* Localizable.strings */,
 				FA18F90A2B3C5C6900987512 /* FileTableViewCell.swift */,
@@ -261,7 +265,6 @@
 				FAD26B0B2A9CC64C004BDB4C /* Extention */,
 				FAD26B092A9CC616004BDB4C /* Route */,
 				FAD26B0A2A9CC624004BDB4C /* Transition */,
-				FAD26AD52A9CC5F4004BDB4C /* SkillBoxDisk */,
 				FA18F9092B3C5BDD00987512 /* Tests */,
 				FAD26AD42A9CC5F4004BDB4C /* Products */,
 				1DCD2B9242B00CEBB2B6A378 /* Pods */,
@@ -689,6 +692,7 @@
 				FAD26B4F2A9D3A46004BDB4C /* TapBarRoute.swift in Sources */,
 				FAD26B1F2A9CD9B2004BDB4C /* FadeAnimatedTransition.swift in Sources */,
 				FAD26B492A9D17E7004BDB4C /* AboutPersonViewController.swift in Sources */,
+				FAD309B82BE6CCFC00867460 /* Model.swift in Sources */,
 				FA45EE0B2AA9E387005785A2 /* NamedFIlesViewController.swift in Sources */,
 				FAD26AE12A9CC5F5004BDB4C /* SkillBoxDisk.xcdatamodeld in Sources */,
 				FA929D892AA79C8100BA67C9 /* LastFileRoute.swift in Sources */,

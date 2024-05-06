@@ -7,13 +7,29 @@
 
 import Foundation
 
-final class LastFilesModel{
+protocol LastFilesViewControllerProtocol: AnyObject {
+    var identifire: String {get set}
+    var viewModel: LastFilesViewModelProtocol {get set}
+}
+
+protocol LastFilesViewModelProtocol: AnyObject {
+    var delegate: LastFilesViewControllerProtocol? {get set}
+    func openPrewviewFile(_ model: Items)
+    
+}
+
+final class LastFilesModel: LastFilesViewModelProtocol {
+    weak var delegate: LastFilesViewControllerProtocol?
+    
+    var viewModel: LastFilesViewModelProtocol
+    
     typealias Routes = Closable
     let router: Routes
     
     init(router: Routes) {
         self.router = router
     }
-    
+    func openPrewviewFile(_ model: Items) {
+    }
 }
     

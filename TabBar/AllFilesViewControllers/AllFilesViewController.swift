@@ -1,16 +1,20 @@
 
 
 import UIKit
-import Alamofire
-
 class AllFilesViewController: UIViewController {
-   
-    
-    
+
     let tableView = UITableView()
-    let networkLabel = UILabel()
-    let noFilesImageView = UIImageView()
-    let noFilesLabel = UILabel()
+  
+    private let viewModel: AllFilesViewModel
+    
+    init(viewModel: AllFilesViewModel) {
+        self.viewModel = viewModel
+        super .init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     private let refreshControl = UIRefreshControl()
     
@@ -24,13 +28,16 @@ class AllFilesViewController: UIViewController {
    
     
     private func setupUI() {
+        view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "")
+        tableView.register(AllFileTableViewCell.self, forCellReuseIdentifier: AllFileTableViewCell.identyfire)
         refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
         
         
     }
+    
+    
     
     @objc func refreshData() {
         
@@ -49,7 +56,11 @@ extension AllFilesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: <#T##String#>)
+        let cell = tableView.dequeueReusableCell(withIdentifier: AllFileTableViewCell.identyfire, for: indexPath) as! AllFileTableViewCell
+        
+        cell.textLabel?.text = cell.nameFileLabel.text
+        
+        return cell
     }
     
     

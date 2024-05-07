@@ -20,15 +20,14 @@ protocol LastFilesViewModelProtocol: AnyObject {
 
 final class LastFilesModel: LastFilesViewModelProtocol {
     weak var delegate: LastFilesViewControllerProtocol?
-    
-    var viewModel: LastFilesViewModelProtocol
-    
+
     typealias Routes = Closable
     let router: Routes
     
     init(router: Routes) {
         self.router = router
     }
+    
     func openPrewviewFile(_ model: Items) {
     }
 }

@@ -19,7 +19,7 @@ extension LastFileRoute where Self: Router {
         router.root = viewController
         
         let navigation = UINavigationController(rootViewController: viewController)
-        viewController.navigationItem.prompt = "Последние файлы".localizedText()
+        viewController.navigationItem.title = "Последние файлы".localizedText()
         navigation.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "file"), tag: 0)
         return navigation
     }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class AllFilesViewModel{
+final class AllFilesViewModel {
     typealias Routes = NameFilesRoute & Closable
     let router: Routes
     

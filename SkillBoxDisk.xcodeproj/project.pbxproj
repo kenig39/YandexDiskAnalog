@@ -22,6 +22,7 @@
 		FA45EE092AA9E35B005785A2 /* NamedFilesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45EE082AA9E35B005785A2 /* NamedFilesModel.swift */; };
 		FA45EE0B2AA9E387005785A2 /* NamedFIlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45EE0A2AA9E387005785A2 /* NamedFIlesViewController.swift */; };
 		FA45EE0D2AA9E4B8005785A2 /* NameFilesRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45EE0C2AA9E4B8005785A2 /* NameFilesRoute.swift */; };
+		FA612C7C2BEA6CA10073B797 /* AllFileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA612C7B2BEA6CA10073B797 /* AllFileTableViewCell.swift */; };
 		FA929D7E2AA7684100BA67C9 /* AboutPersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA929D7D2AA7684100BA67C9 /* AboutPersonModel.swift */; };
 		FA929D802AA76A0500BA67C9 /* LastFilesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA929D7F2AA76A0500BA67C9 /* LastFilesModel.swift */; };
 		FA929D832AA76BFC00BA67C9 /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA929D822AA76BFC00BA67C9 /* TabBarModel.swift */; };
@@ -101,6 +102,7 @@
 		FA45EE082AA9E35B005785A2 /* NamedFilesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedFilesModel.swift; sourceTree = "<group>"; };
 		FA45EE0A2AA9E387005785A2 /* NamedFIlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedFIlesViewController.swift; sourceTree = "<group>"; };
 		FA45EE0C2AA9E4B8005785A2 /* NameFilesRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameFilesRoute.swift; sourceTree = "<group>"; };
+		FA612C7B2BEA6CA10073B797 /* AllFileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFileTableViewCell.swift; sourceTree = "<group>"; };
 		FA929D7D2AA7684100BA67C9 /* AboutPersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPersonModel.swift; sourceTree = "<group>"; };
 		FA929D7F2AA76A0500BA67C9 /* LastFilesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFilesModel.swift; sourceTree = "<group>"; };
 		FA929D822AA76BFC00BA67C9 /* TabBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
@@ -243,8 +245,8 @@
 			children = (
 				FA929D822AA76BFC00BA67C9 /* TabBarModel.swift */,
 				FAD26B3E2A9D166D004BDB4C /* LastFilesViews */,
-				FAD26B422A9D172D004BDB4C /* AboutPersonViews */,
-				FAD26B432A9D174F004BDB4C /* AllFilesViews */,
+				FAD26B422A9D172D004BDB4C /* AboutPersonViewControllers */,
+				FAD26B432A9D174F004BDB4C /* AllFilesViewControllers */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -407,22 +409,23 @@
 			path = LastFilesViews;
 			sourceTree = "<group>";
 		};
-		FAD26B422A9D172D004BDB4C /* AboutPersonViews */ = {
+		FAD26B422A9D172D004BDB4C /* AboutPersonViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				FAD26B482A9D17E7004BDB4C /* AboutPersonViewController.swift */,
 				FA929D7D2AA7684100BA67C9 /* AboutPersonModel.swift */,
 			);
-			path = AboutPersonViews;
+			path = AboutPersonViewControllers;
 			sourceTree = "<group>";
 		};
-		FAD26B432A9D174F004BDB4C /* AllFilesViews */ = {
+		FAD26B432A9D174F004BDB4C /* AllFilesViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				FAD26B462A9D17CC004BDB4C /* AllFilesViewController.swift */,
 				FA2FE9162AA6694C00777C99 /* AllFilesViewModel.swift */,
+				FA612C7B2BEA6CA10073B797 /* AllFileTableViewCell.swift */,
 			);
-			path = AllFilesViews;
+			path = AllFilesViewControllers;
 			sourceTree = "<group>";
 		};
 		FAFA11342AC4A2A5006FA9AD /* CoreData */ = {
@@ -708,6 +711,7 @@
 				FA3CC6ED2B409F3B00CF214C /* AuthViewController.swift in Sources */,
 				FA929D8B2AA7B91D00BA67C9 /* LoginModel.swift in Sources */,
 				FAD26B1D2A9CD975004BDB4C /* AnimatedTransition.swift in Sources */,
+				FA612C7C2BEA6CA10073B797 /* AllFileTableViewCell.swift in Sources */,
 				FAD26B102A9CC6B7004BDB4C /* DefaltRoute.swift in Sources */,
 				FA18F90B2B3C5C6900987512 /* FileTableViewCell.swift in Sources */,
 				FA929D802AA76A0500BA67C9 /* LastFilesModel.swift in Sources */,

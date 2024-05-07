@@ -1,5 +1,5 @@
 //
-//  AllFileTableViewCell.swift
+//  LastFileTableViewCell.swift
 //  SkillBoxDisk
 //
 //  Created by Alexander on 07.05.2024.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-class AllFileTableViewCell: UITableViewCell {
-    
-    static let identyfire = String(describing: AllFileTableViewCell.self)
+class LastFileTableViewCell: UITableViewCell {
+
+    static let identyfire = String(describing: LastFileTableViewCell.self)
     
     let nameFileLabel = UILabel()
     let imageFile = UIImageView()
@@ -68,5 +68,5 @@ class AllFileTableViewCell: UITableViewCell {
         dataAddLabel.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
         
     }
-    
+
 }

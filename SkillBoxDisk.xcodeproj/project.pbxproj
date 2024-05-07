@@ -23,6 +23,7 @@
 		FA45EE0B2AA9E387005785A2 /* NamedFIlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45EE0A2AA9E387005785A2 /* NamedFIlesViewController.swift */; };
 		FA45EE0D2AA9E4B8005785A2 /* NameFilesRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45EE0C2AA9E4B8005785A2 /* NameFilesRoute.swift */; };
 		FA612C7C2BEA6CA10073B797 /* AllFileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA612C7B2BEA6CA10073B797 /* AllFileTableViewCell.swift */; };
+		FA612C7E2BEA97140073B797 /* LastFileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA612C7D2BEA97140073B797 /* LastFileTableViewCell.swift */; };
 		FA929D7E2AA7684100BA67C9 /* AboutPersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA929D7D2AA7684100BA67C9 /* AboutPersonModel.swift */; };
 		FA929D802AA76A0500BA67C9 /* LastFilesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA929D7F2AA76A0500BA67C9 /* LastFilesModel.swift */; };
 		FA929D832AA76BFC00BA67C9 /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA929D822AA76BFC00BA67C9 /* TabBarModel.swift */; };
@@ -103,6 +104,7 @@
 		FA45EE0A2AA9E387005785A2 /* NamedFIlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedFIlesViewController.swift; sourceTree = "<group>"; };
 		FA45EE0C2AA9E4B8005785A2 /* NameFilesRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameFilesRoute.swift; sourceTree = "<group>"; };
 		FA612C7B2BEA6CA10073B797 /* AllFileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFileTableViewCell.swift; sourceTree = "<group>"; };
+		FA612C7D2BEA97140073B797 /* LastFileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFileTableViewCell.swift; sourceTree = "<group>"; };
 		FA929D7D2AA7684100BA67C9 /* AboutPersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPersonModel.swift; sourceTree = "<group>"; };
 		FA929D7F2AA76A0500BA67C9 /* LastFilesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFilesModel.swift; sourceTree = "<group>"; };
 		FA929D822AA76BFC00BA67C9 /* TabBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
@@ -264,10 +266,10 @@
 				FAFA11342AC4A2A5006FA9AD /* CoreData */,
 				FAD26B0C2A9CC65E004BDB4C /* ViewColtrollers */,
 				FA929D812AA76B0B00BA67C9 /* TabBar */,
-				FAD26B0B2A9CC64C004BDB4C /* Extention */,
 				FAD26B092A9CC616004BDB4C /* Route */,
 				FAD26B0A2A9CC624004BDB4C /* Transition */,
 				FA18F9092B3C5BDD00987512 /* Tests */,
+				FAD26B0B2A9CC64C004BDB4C /* Extention */,
 				FAD26AD42A9CC5F4004BDB4C /* Products */,
 				1DCD2B9242B00CEBB2B6A378 /* Pods */,
 				A4003C28B6CA7DD5DBE3B5EB /* Frameworks */,
@@ -405,6 +407,7 @@
 			children = (
 				FAD26B4A2A9D1808004BDB4C /* LastFilesViewController.swift */,
 				FA929D7F2AA76A0500BA67C9 /* LastFilesModel.swift */,
+				FA612C7D2BEA97140073B797 /* LastFileTableViewCell.swift */,
 			);
 			path = LastFilesViews;
 			sourceTree = "<group>";
@@ -709,6 +712,7 @@
 				FAD26B4B2A9D1808004BDB4C /* LastFilesViewController.swift in Sources */,
 				FA45EE0D2AA9E4B8005785A2 /* NameFilesRoute.swift in Sources */,
 				FA3CC6ED2B409F3B00CF214C /* AuthViewController.swift in Sources */,
+				FA612C7E2BEA97140073B797 /* LastFileTableViewCell.swift in Sources */,
 				FA929D8B2AA7B91D00BA67C9 /* LoginModel.swift in Sources */,
 				FAD26B1D2A9CD975004BDB4C /* AnimatedTransition.swift in Sources */,
 				FA612C7C2BEA6CA10073B797 /* AllFileTableViewCell.swift in Sources */,

@@ -25,6 +25,10 @@ class AllFilesViewController: UIViewController {
         setupConstrains()
     }
     
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        tableView.frame = view.bounds
+    }
    
     
     private func setupUI() {
@@ -58,7 +62,7 @@ extension AllFilesViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: AllFileTableViewCell.identyfire, for: indexPath) as! AllFileTableViewCell
         
-        cell.textLabel?.text = cell.nameFileLabel.text
+       
         
         return cell
     }

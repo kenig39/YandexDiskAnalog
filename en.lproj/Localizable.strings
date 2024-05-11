@@ -10,9 +10,9 @@
 "Назад" = "Back";
 "Профиль" = "Profile";
 "Все файлы" = "All Files";
-"Последние файлы" = "Last Files";
+"Последние загрузки" = "Last Uploads";
 "Название файла" = "Name Files";
-"Вы уверенны что хотите выйти" = "You sure to want to exit";
+"Вы уверенны что хотите выйти из аккаунта" = "You sure to want to exit from account";
 "Это сотрет все ваши данные" = "This action clear you data";
 "Войти с помощью яндекс"   = "Enter with yandex";
 

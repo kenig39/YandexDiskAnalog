@@ -30,5 +30,8 @@ final class AboutPersonModel{
         
     }
     
+    func changeLanguge() {
+        
+    }
     
 }

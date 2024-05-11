@@ -357,7 +357,6 @@
 		FAD26B0C2A9CC65E004BDB4C /* ViewColtrollers */ = {
 			isa = PBXGroup;
 			children = (
-				FA2A52742AAB5FF3005E5300 /* LastUploads */,
 				FA45EE072AA9E2F6005785A2 /* NamedFiles */,
 				FAD26B342A9CE1EF004BDB4C /* LogoType */,
 				FAD26B332A9CDE4D004BDB4C /* LoginGroop */,
@@ -415,6 +414,7 @@
 		FAD26B422A9D172D004BDB4C /* AboutPersonViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FA2A52742AAB5FF3005E5300 /* LastUploads */,
 				FAD26B482A9D17E7004BDB4C /* AboutPersonViewController.swift */,
 				FA929D7D2AA7684100BA67C9 /* AboutPersonModel.swift */,
 			);

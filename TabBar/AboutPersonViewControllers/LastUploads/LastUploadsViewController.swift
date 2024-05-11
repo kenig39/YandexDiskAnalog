@@ -26,7 +26,9 @@ class LastUploadsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .done, target: self, action: close())
+        
         let button = UIButton(title: "Закрыть", target: self, selector: #selector(close))
         
           let hStack = UIStackView(arrangedSubviews: [button])

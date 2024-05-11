@@ -33,10 +33,15 @@ class AboutPersonViewController: UIViewController {
         
         let lastUpLoad = UIButton(title: "Последние загрузки".localizedText(), target: self, selector: #selector(openLastUploads))
         let changeLocal = UIButton(title: "Сменить язык".localizedText(), target: self, selector: #selector(changeLanguage))
-        let hStack = UIStackView(arrangedSubviews: [lastUpLoad,changeLocal])
-        addStackView(vStack: hStack)
-        
+
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Выход".localizedText(), image: nil, target: self, action: #selector(actionSheet))
+        view.addSubview(lastUpLoad)
+        lastUpLoad.layer.cornerRadius = 5
+        lastUpLoad.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10).isActive = true
+        view.addSubview(changeLocal)
+        changeLocal.layer.cornerRadius = 5
+        changeLocal.layer.borderColor = .init(genericCMYKCyan: 6, magenta: 56, yellow: 98, black: 100, alpha: 1)
+        changeLocal.layer.borderWidth = 3
     }
     
     

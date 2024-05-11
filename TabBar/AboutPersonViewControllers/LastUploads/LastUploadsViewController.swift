@@ -27,13 +27,8 @@ class LastUploadsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .done, target: self, action: close())
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .done, target: self, action: #selector(close))
         
-        let button = UIButton(title: "Закрыть", target: self, selector: #selector(close))
-        
-          let hStack = UIStackView(arrangedSubviews: [button])
-          addStackView(vStack: hStack)
-          
         
         navigationItem.title = "Последние Загрузки"
         view.backgroundColor = .white

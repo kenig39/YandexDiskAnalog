@@ -14,9 +14,9 @@ extension UIViewController {
         vStack.distribution  = .equalCentering
         vStack.alignment = .fill
         vStack.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(vStack)
         vStack.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         vStack.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        view.addSubview(vStack)
     }
     
 }

@@ -25,6 +25,8 @@ class AboutPersonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Выход".localizedText(), image: nil, target: self, action: #selector(actionSheet))
+        
         buttonTap()
      
     }
@@ -33,15 +35,25 @@ class AboutPersonViewController: UIViewController {
         
         let lastUpLoad = UIButton(title: "Последние загрузки".localizedText(), target: self, selector: #selector(openLastUploads))
         let changeLocal = UIButton(title: "Сменить язык".localizedText(), target: self, selector: #selector(changeLanguage))
-
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Выход".localizedText(), image: nil, target: self, action: #selector(actionSheet))
-        view.addSubview(lastUpLoad)
+        
+       
+        view.addSubviews(view: [changeLocal, lastUpLoad])
+        lastUpLoad.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 100).isActive = true
         lastUpLoad.layer.cornerRadius = 5
         lastUpLoad.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10).isActive = true
-        view.addSubview(changeLocal)
+        lastUpLoad.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
+        
+        changeLocal.topAnchor.constraint(equalTo: lastUpLoad.bottomAnchor, constant: 10).isActive = true
+        changeLocal.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
         changeLocal.layer.cornerRadius = 5
         changeLocal.layer.borderColor = .init(genericCMYKCyan: 6, magenta: 56, yellow: 98, black: 100, alpha: 1)
         changeLocal.layer.borderWidth = 3
+        
+//        let vStack = UIStackView(arrangedSubviews: [lastUpLoad, changeLocal])
+//        addStackView(vStack: vStack)
+        
+        
+
     }
     
     

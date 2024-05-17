@@ -27,7 +27,7 @@ class LastUploadsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .done, target: self, action: #selector(close))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Назад".localizedText(), style: .done, target: self, action: #selector(close))
         
         
         navigationItem.title = "Последние Загрузки"

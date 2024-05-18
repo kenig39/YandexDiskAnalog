@@ -31,6 +31,7 @@
 		FA929D872AA76FDF00BA67C9 /* AboutPersonRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA929D862AA76FDF00BA67C9 /* AboutPersonRoute.swift */; };
 		FA929D892AA79C8100BA67C9 /* LastFileRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA929D882AA79C8100BA67C9 /* LastFileRoute.swift */; };
 		FA929D8B2AA7B91D00BA67C9 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA929D8A2AA7B91D00BA67C9 /* LoginModel.swift */; };
+		FA9750832BF94BB7002062FD /* LastUploadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9750822BF94BB7002062FD /* LastUploadTableViewCell.swift */; };
 		FAD26AD72A9CC5F4004BDB4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26AD62A9CC5F4004BDB4C /* AppDelegate.swift */; };
 		FAD26AD92A9CC5F4004BDB4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26AD82A9CC5F4004BDB4C /* SceneDelegate.swift */; };
 		FAD26AE12A9CC5F5004BDB4C /* SkillBoxDisk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAD26ADF2A9CC5F5004BDB4C /* SkillBoxDisk.xcdatamodeld */; };
@@ -112,6 +113,7 @@
 		FA929D862AA76FDF00BA67C9 /* AboutPersonRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPersonRoute.swift; sourceTree = "<group>"; };
 		FA929D882AA79C8100BA67C9 /* LastFileRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFileRoute.swift; sourceTree = "<group>"; };
 		FA929D8A2AA7B91D00BA67C9 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		FA9750822BF94BB7002062FD /* LastUploadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastUploadTableViewCell.swift; sourceTree = "<group>"; };
 		FAD26AD32A9CC5F4004BDB4C /* SkillBoxDisk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkillBoxDisk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD26AD62A9CC5F4004BDB4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD26AD82A9CC5F4004BDB4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 			children = (
 				FA2A52752AAB6015005E5300 /* LastUploadsModel.swift */,
 				FA2A52772AAB606C005E5300 /* LastUploadsViewController.swift */,
+				FA9750822BF94BB7002062FD /* LastUploadTableViewCell.swift */,
 			);
 			path = LastUploads;
 			sourceTree = "<group>";
@@ -687,6 +690,7 @@
 				FAD26B142A9CC71B004BDB4C /* ModalTransition.swift in Sources */,
 				FAD26B1A2A9CD92D004BDB4C /* PushTransition.swift in Sources */,
 				FA929D832AA76BFC00BA67C9 /* TabBarModel.swift in Sources */,
+				FA9750832BF94BB7002062FD /* LastUploadTableViewCell.swift in Sources */,
 				FAD26B2E2A9CDBDD004BDB4C /* LogoTypeView.swift in Sources */,
 				FA2FE9172AA6694C00777C99 /* AllFilesViewModel.swift in Sources */,
 				FAD26B262A9CDA6F004BDB4C /* OnboardingPagesController.swift in Sources */,

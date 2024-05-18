@@ -38,13 +38,14 @@ class AboutPersonViewController: UIViewController {
         
        
         view.addSubviews(view: [changeLocal, lastUpLoad])
-        lastUpLoad.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 100).isActive = true
-        lastUpLoad.layer.cornerRadius = 5
-        lastUpLoad.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10).isActive = true
-        lastUpLoad.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
-        
+        lastUpLoad.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 200).isActive = true
+       // lastUpLoad.layer.cornerRadius = 5
+        lastUpLoad.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 15).isActive = true
+
         changeLocal.topAnchor.constraint(equalTo: lastUpLoad.bottomAnchor, constant: 10).isActive = true
-        changeLocal.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
+        changeLocal.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 15).isActive = true
+        changeLocal.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        changeLocal.heightAnchor.constraint(equalToConstant: 40).isActive = true
         changeLocal.layer.cornerRadius = 5
         changeLocal.layer.borderColor = .init(genericCMYKCyan: 6, magenta: 56, yellow: 98, black: 100, alpha: 1)
         changeLocal.layer.borderWidth = 3

@@ -31,6 +31,9 @@ class LastUploadsViewController: UIViewController {
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Назад".localizedText(), style: .done, target: self, action: #selector(close))
         
+        view.addSubview(tableView)
+        tableView.delegate = self
+        tableView.dataSource = self
         tableView.register(LastUploadTableViewCell.self, forCellReuseIdentifier: LastUploadTableViewCell.identyfire)
         
         navigationItem.title = "Последние Загрузки"
@@ -43,9 +46,6 @@ class LastUploadsViewController: UIViewController {
         tableView.frame = view.bounds
     }
    
-    
-    
-    
     @objc func close(){
         viewModel.closable()
     }

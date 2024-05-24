@@ -29,12 +29,7 @@ class TableCellDefault: UITableViewCell {
 
     func setupUIElements() {
         
-        nameFileLabel.translatesAutoresizingMaskIntoConstraints = false
-        imageFile.translatesAutoresizingMaskIntoConstraints = false
-        sizeLabel.translatesAutoresizingMaskIntoConstraints = false
-        dataAddLabel.translatesAutoresizingMaskIntoConstraints = false
-        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
-        
+     
         activityIndicator.style = .medium
         activityIndicator.color = UIColor.gray
         
@@ -54,7 +49,9 @@ class TableCellDefault: UITableViewCell {
         dataAddLabel.font = UIFont.boldSystemFont(ofSize: 12)
         dataAddLabel.textColor = UIColor.lightGray
         
-        addSubviews(view: [nameFileLabel, imageFile,dataAddLabel, sizeLabel, activityIndicator])
+        [activityIndicator,dataAddLabel, sizeLabel, imageFile, nameFileLabel].forEach { subView in subView.translatesAutoresizingMaskIntoConstraints = false
+            addSubview(subView)
+        }
     }
     
     func setupConstarains() {

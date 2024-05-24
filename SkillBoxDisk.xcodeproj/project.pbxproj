@@ -34,6 +34,7 @@
 		FA94578F2C00ACF20079E850 /* TableCellDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA94578E2C00ACF20079E850 /* TableCellDefault.swift */; };
 		FA9457912C00B1B00079E850 /* TableViewDefaultControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9457902C00B1B00079E850 /* TableViewDefaultControllerViewController.swift */; };
 		FA9457932C00B3840079E850 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9457922C00B3840079E850 /* ServiceProtocol.swift */; };
+		FA9457952C011B110079E850 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9457942C011B110079E850 /* APIError.swift */; };
 		FA9750832BF94BB7002062FD /* LastUploadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9750822BF94BB7002062FD /* LastUploadTableViewCell.swift */; };
 		FAD26AD72A9CC5F4004BDB4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26AD62A9CC5F4004BDB4C /* AppDelegate.swift */; };
 		FAD26AD92A9CC5F4004BDB4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26AD82A9CC5F4004BDB4C /* SceneDelegate.swift */; };
@@ -119,6 +120,7 @@
 		FA94578E2C00ACF20079E850 /* TableCellDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellDefault.swift; sourceTree = "<group>"; };
 		FA9457902C00B1B00079E850 /* TableViewDefaultControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDefaultControllerViewController.swift; sourceTree = "<group>"; };
 		FA9457922C00B3840079E850 /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		FA9457942C011B110079E850 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		FA9750822BF94BB7002062FD /* LastUploadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastUploadTableViewCell.swift; sourceTree = "<group>"; };
 		FAD26AD32A9CC5F4004BDB4C /* SkillBoxDisk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkillBoxDisk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD26AD62A9CC5F4004BDB4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				FA9457922C00B3840079E850 /* ServiceProtocol.swift */,
+				FA9457942C011B110079E850 /* APIError.swift */,
 			);
 			path = APIGroupe;
 			sourceTree = "<group>";
@@ -719,6 +722,7 @@
 				FAD26B4F2A9D3A46004BDB4C /* TapBarRoute.swift in Sources */,
 				FAD26B1F2A9CD9B2004BDB4C /* FadeAnimatedTransition.swift in Sources */,
 				FAD26B492A9D17E7004BDB4C /* AboutPersonViewController.swift in Sources */,
+				FA9457952C011B110079E850 /* APIError.swift in Sources */,
 				FAD309B82BE6CCFC00867460 /* Model.swift in Sources */,
 				FA45EE0B2AA9E387005785A2 /* NamedFIlesViewController.swift in Sources */,
 				FAD26AE12A9CC5F5004BDB4C /* SkillBoxDisk.xcdatamodeld in Sources */,

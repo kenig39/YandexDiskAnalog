@@ -42,7 +42,6 @@ class AllFilesViewController: UIViewController {
     }
     
     
-    
     @objc func refreshData() {
         
     }
@@ -51,6 +50,11 @@ class AllFilesViewController: UIViewController {
     private func setupConstrains() {
         
     }
+    
+    func updateData() {
+         
+    }
+    
 }
 
 extension AllFilesViewController: UITableViewDelegate, UITableViewDataSource {

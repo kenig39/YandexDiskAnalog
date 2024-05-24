@@ -20,6 +20,15 @@ class AboutPersonViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    private let firstCircleView: UIView = {
+        let view = UIView()
+        return view
+    }()
+    
+    private let secondCircleView: UIView = {
+        let view = UIView()
+        return view
+    }()
    
     
     override func viewDidLoad() {
@@ -31,6 +40,8 @@ class AboutPersonViewController: UIViewController {
      
     }
     
+   
+    
     func buttonTap(){
         
         let lastUpLoad = UIButton(title: "Последние загрузки".localizedText(), target: self, selector: #selector(openLastUploads))
@@ -41,22 +52,12 @@ class AboutPersonViewController: UIViewController {
         lastUpLoad.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 200).isActive = true
        // lastUpLoad.layer.cornerRadius = 5
         lastUpLoad.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 15).isActive = true
-
+       
         changeLocal.topAnchor.constraint(equalTo: lastUpLoad.bottomAnchor, constant: 10).isActive = true
         changeLocal.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 15).isActive = true
-        changeLocal.widthAnchor.constraint(equalToConstant: 200).isActive = true
-        changeLocal.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        changeLocal.layer.cornerRadius = 5
-        changeLocal.layer.borderColor = .init(genericCMYKCyan: 6, magenta: 56, yellow: 98, black: 100, alpha: 1)
-        changeLocal.layer.borderWidth = 3
-        
-//        let vStack = UIStackView(arrangedSubviews: [lastUpLoad, changeLocal])
-//        addStackView(vStack: vStack)
-        
-        
 
     }
-    
+  
     
     @objc func openLastUploads(){
         viewModel.openLastUpLoads()

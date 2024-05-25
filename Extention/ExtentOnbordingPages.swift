@@ -34,27 +34,30 @@ extension OnboadrdingPages{
     
     
     func style() {
-          pageControl.translatesAutoresizingMaskIntoConstraints = false
+         // pageControl.translatesAutoresizingMaskIntoConstraints = false
           pageControl.currentPageIndicatorTintColor = .black
           pageControl.pageIndicatorTintColor = .systemGray2
           pageControl.numberOfPages = pages.count
           pageControl.currentPage = initialPage
 
-          skipButton.translatesAutoresizingMaskIntoConstraints = false
+         // skipButton.translatesAutoresizingMaskIntoConstraints = false
           skipButton.setTitleColor(.systemBlue, for: .normal)
         skipButton.setTitle("Назад".localizedText(), for: .normal)
           skipButton.addTarget(self, action: #selector(skipTapped(_:)), for: .primaryActionTriggered)
 
-          nextButton.translatesAutoresizingMaskIntoConstraints = false
+         // nextButton.translatesAutoresizingMaskIntoConstraints = false
           nextButton.setTitleColor(.systemBlue, for: .normal)
         nextButton.setTitle("Далее".localizedText(), for: .normal)
           nextButton.addTarget(self, action: #selector(nextTapped(_:)), for: .primaryActionTriggered)
       }
     
     func layout() {
-           view.addSubview(pageControl)
-           view.addSubview(nextButton)
-           view.addSubview(skipButton)
+          
+        [pageControl, skipButton, nextButton].forEach { subview in
+            subview.translatesAutoresizingMaskIntoConstraints = false
+            view.addSubview(subview)
+            
+        }
            
            NSLayoutConstraint.activate([
                pageControl.widthAnchor.constraint(equalTo: view.widthAnchor),

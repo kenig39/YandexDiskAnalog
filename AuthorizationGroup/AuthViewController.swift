@@ -10,29 +10,58 @@ import WebKit
 import SnapKit
 
 protocol AuthViewControllerDelegate: AnyObject {
-    var viewModel: AuthViewControllerDelegate? {get set}
+    var viewModel: AuthViewModelProtocol? {get set}
     var token: String? {get set}
     var clientID: String {get set}
     var userIsLogged: Bool {get set}
 }
 
-final class AuthViewController: UIViewController{
+final class AuthViewController: UIViewController, AuthViewControllerDelegate{
+    
+    var viewModel: AuthViewModelProtocol?
+    
     
     weak var delegate: AuthViewControllerDelegate?
+    var token: String? = UserDefaults.standard.string(forKey: "token")
+    var clientID: String = "6ab311e2b11f4669b455674832317d57"
+    var userIsLogged: Bool = UserDefaults.standard.bool(forKey: "userIsLogged")
     
+
+
+   private var webView = WKWebView()
     
-    private let webVIew = WKWebView()
-    private let clientID = "6ab311e2b11f4669b455674832317d57"
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
     }
+
+private func WebViewSetup() {
+    let webConfig = WKWebViewConfiguration()
+    var webview = WKWebView(frame: .zero, configuration: webConfig)
+    webView = webview
+    view = webView
+    guard let reguest = viewModel?.loginAuth() else { return }
+    webView.load(reguest)
+    webView.navigationDelegate = self
+    
+  
+}
+    
+    init(viewModel: AuthViewModelProtocol) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     private func setupViews(){
-        view.addSubview(webVIew)
+        view.addSubview(webView)
         
-        webVIew.snp.makeConstraints { make in
+        webView.snp.makeConstraints { make in
             make.center.equalToSuperview()
         }
         

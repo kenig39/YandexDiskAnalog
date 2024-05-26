@@ -10,7 +10,10 @@ import WebKit
 import SnapKit
 
 protocol AuthViewControllerDelegate: AnyObject {
-    func handelTokenChanged(token: String)
+    var viewModel: AuthViewControllerDelegate? {get set}
+    var token: String? {get set}
+    var clientID: String {get set}
+    var userIsLogged: Bool {get set}
 }
 
 final class AuthViewController: UIViewController{

@@ -79,8 +79,9 @@ extension AuthViewController: WKNavigationDelegate {
             guard let components = URLComponents(string: targetString) else {return}
             
             if let token = components.queryItems?.first(where: {
-                $0.name == "acces_token"})?.value {
-                delegate?.handelTokenChanged(token: token)
+                $0.name == "access_token"})?.value {
+                UserDefaults.standard.set(token, forKey: "token")
+                UserDefaults.standard.set(true, forKey: "userIsLogged")
             }
             dismiss(animated: true)
             }

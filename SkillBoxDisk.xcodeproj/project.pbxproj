@@ -25,6 +25,7 @@
 		FA612C7C2BEA6CA10073B797 /* AllFileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA612C7B2BEA6CA10073B797 /* AllFileTableViewCell.swift */; };
 		FA612C7E2BEA97140073B797 /* LastFileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA612C7D2BEA97140073B797 /* LastFileTableViewCell.swift */; };
 		FA9201102C03CAAC003FC16B /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92010F2C03CAAC003FC16B /* AuthViewModel.swift */; };
+		FA9201122C03D4B0003FC16B /* AllFilesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9201112C03D4B0003FC16B /* AllFilesAPI.swift */; };
 		FA929D7E2AA7684100BA67C9 /* AboutPersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA929D7D2AA7684100BA67C9 /* AboutPersonModel.swift */; };
 		FA929D802AA76A0500BA67C9 /* LastFilesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA929D7F2AA76A0500BA67C9 /* LastFilesModel.swift */; };
 		FA929D832AA76BFC00BA67C9 /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA929D822AA76BFC00BA67C9 /* TabBarModel.swift */; };
@@ -112,6 +113,7 @@
 		FA612C7B2BEA6CA10073B797 /* AllFileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFileTableViewCell.swift; sourceTree = "<group>"; };
 		FA612C7D2BEA97140073B797 /* LastFileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFileTableViewCell.swift; sourceTree = "<group>"; };
 		FA92010F2C03CAAC003FC16B /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		FA9201112C03D4B0003FC16B /* AllFilesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFilesAPI.swift; sourceTree = "<group>"; };
 		FA929D7D2AA7684100BA67C9 /* AboutPersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPersonModel.swift; sourceTree = "<group>"; };
 		FA929D7F2AA76A0500BA67C9 /* LastFilesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFilesModel.swift; sourceTree = "<group>"; };
 		FA929D822AA76BFC00BA67C9 /* TabBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 			children = (
 				FA9457922C00B3840079E850 /* ServiceProtocol.swift */,
 				FA9457942C011B110079E850 /* APIError.swift */,
+				FA9201112C03D4B0003FC16B /* AllFilesAPI.swift */,
 			);
 			path = APIGroupe;
 			sourceTree = "<group>";
@@ -745,6 +748,7 @@
 				FA3CC6ED2B409F3B00CF214C /* AuthViewController.swift in Sources */,
 				FA612C7E2BEA97140073B797 /* LastFileTableViewCell.swift in Sources */,
 				FA929D8B2AA7B91D00BA67C9 /* LoginModel.swift in Sources */,
+				FA9201122C03D4B0003FC16B /* AllFilesAPI.swift in Sources */,
 				FAD26B1D2A9CD975004BDB4C /* AnimatedTransition.swift in Sources */,
 				FA612C7C2BEA6CA10073B797 /* AllFileTableViewCell.swift in Sources */,
 				FAD26B102A9CC6B7004BDB4C /* DefaltRoute.swift in Sources */,

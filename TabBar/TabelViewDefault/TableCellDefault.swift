@@ -55,19 +55,30 @@ class TableCellDefault: UITableViewCell {
     }
     
     func setupConstarains() {
-        imageFile.topAnchor.constraint(equalTo: topAnchor, constant: 10).isActive = true
-        imageFile.leftAnchor.constraint(equalTo: leftAnchor, constant: 15).isActive = true
-        imageFile.heightAnchor.constraint(equalToConstant: 20).isActive = true
-        imageFile.widthAnchor.constraint(equalToConstant: 20).isActive = true
         
-        nameFileLabel.leftAnchor.constraint(equalTo: imageFile.rightAnchor, constant: 15).isActive = true
+        imageFile.snp.makeConstraints { make in
+            make.top.equalTo(snp.top).inset(10)
+            make.left.equalTo(snp.left).inset(15)
+            make.height.equalTo(25)
+            make.width.equalTo(25)
+        }
         
-        sizeLabel.leftAnchor.constraint(equalTo: imageFile.rightAnchor, constant: 15).isActive = true
-        sizeLabel.topAnchor.constraint(equalTo: nameFileLabel.bottomAnchor, constant: 5).isActive = true
+        nameFileLabel.snp.makeConstraints { make in
+            make.top.equalTo(snp.top).inset(5)
+            make.left.equalTo(imageFile.snp.right).inset(-15)
+        }
         
-        dataAddLabel.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
+        sizeLabel.snp.makeConstraints { make in
+            make.top.equalTo(nameFileLabel.snp.bottom).inset(-2)
+            make.left.equalTo(imageFile.snp.right).inset(-15)
+        }
         
-        activityIndicator.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+        dataAddLabel.snp.makeConstraints { make in
+            make.top.equalTo(snp.top).inset(5)
+            make.right.equalTo(snp.right).inset(20)
+        }
+
+     //   activityIndicator.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         
     }
 }

@@ -20,11 +20,11 @@ class AuthViewModel: AuthViewModelProtocol {
     
     weak var delegate: AuthViewControllerDelegate?
     
-    typealias Routes = TabBarRoute & Dismissable
-    private let router: Router
+    typealias Routes = TabBarInsets & Dismissable
+    private let router: Routes
    // var model = LoginModel.content
     
-    init(router: Router) {
+    init(router: Routes) {
         self.router = router
     }
     
@@ -39,6 +39,6 @@ class AuthViewModel: AuthViewModelProtocol {
     }
     
     func openTabBar() {
-           router.openTabBar()
+        router.showTabBar()
     }
 }

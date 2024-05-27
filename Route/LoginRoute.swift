@@ -17,19 +17,15 @@ extension LoginRoute where Self: Router {
         let viewModel = LoginModel(router: router)
         let viewController = LoginViewController(viewModel: viewModel)
         router.root = viewController
-
-        let navigation = UINavigationController(rootViewController: viewController)
-        navigation.tabBarItem = TabsView.allfiles.item
-      return navigation
+        
     }
+      
+        func openLogin() {
+            openLogin(transition: AnimatedTransition(animatedTransition: FadeAnimatedTransitioning()))
+        }
 
 
 }
 
-extension DefaultRouter: LoginRoute {
-    func openLogin() {
-        root?.tabBarController?.selectedIndex = TabsView.allfiles.index
-
-    }
-}
+extension DefaultRouter: LoginRoute {}
 

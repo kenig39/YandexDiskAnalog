@@ -10,12 +10,10 @@
 		099F213BF2D0FECAD425CDA1 /* Pods_SkillBoxDiskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78AE3432A0E2073FA2262C2E /* Pods_SkillBoxDiskTests.framework */; };
 		50179EE918376F96CC1BECAA /* Pods_SkillBoxDisk_SkillBoxDiskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E7C0F4647693485C46081D /* Pods_SkillBoxDisk_SkillBoxDiskUITests.framework */; };
 		E7628DE4CBABD5C17FAFAEFD /* Pods_SkillBoxDisk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C58819A3D13586B4524DE21 /* Pods_SkillBoxDisk.framework */; };
-		FA18F90B2B3C5C6900987512 /* FileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18F90A2B3C5C6900987512 /* FileTableViewCell.swift */; };
 		FA2A52762AAB6015005E5300 /* LastUploadsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A52752AAB6015005E5300 /* LastUploadsModel.swift */; };
 		FA2A52782AAB606C005E5300 /* LastUploadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A52772AAB606C005E5300 /* LastUploadsViewController.swift */; };
 		FA2A527A2AAB62D8005E5300 /* LastUploadsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A52792AAB62D8005E5300 /* LastUploadsRoute.swift */; };
 		FA2FE9172AA6694C00777C99 /* AllFilesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2FE9162AA6694C00777C99 /* AllFilesViewModel.swift */; };
-		FA3CC6EA2B4095AB00CF214C /* FileDiskModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3CC6E92B4095AB00CF214C /* FileDiskModels.swift */; };
 		FA3CC6ED2B409F3B00CF214C /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3CC6EC2B409F3B00CF214C /* AuthViewController.swift */; };
 		FA45EE022AA9D021005785A2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA45EE042AA9D021005785A2 /* Localizable.strings */; };
 		FA45EE062AA9D2FE005785A2 /* Extention Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45EE052AA9D2FE005785A2 /* Extention Localize.swift */; };
@@ -59,11 +57,9 @@
 		FAD26B242A9CDA46004BDB4C /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26B232A9CDA46004BDB4C /* OnboardingViewController.swift */; };
 		FAD26B262A9CDA6F004BDB4C /* OnboardingPagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26B252A9CDA6F004BDB4C /* OnboardingPagesController.swift */; };
 		FAD26B282A9CDAE9004BDB4C /* ExtentionsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26B272A9CDAE9004BDB4C /* ExtentionsUI.swift */; };
-		FAD26B2A2A9CDB41004BDB4C /* ExtentOnbordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26B292A9CDB41004BDB4C /* ExtentOnbordingView.swift */; };
 		FAD26B2C2A9CDB6B004BDB4C /* ExtentOnbordingPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26B2B2A9CDB6B004BDB4C /* ExtentOnbordingPages.swift */; };
 		FAD26B2E2A9CDBDD004BDB4C /* LogoTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26B2D2A9CDBDD004BDB4C /* LogoTypeView.swift */; };
 		FAD26B302A9CDC50004BDB4C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26B2F2A9CDC50004BDB4C /* LoginViewController.swift */; };
-		FAD26B322A9CDCA2004BDB4C /* LoginExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26B312A9CDCA2004BDB4C /* LoginExtention.swift */; };
 		FAD26B472A9D17CC004BDB4C /* AllFilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26B462A9D17CC004BDB4C /* AllFilesViewController.swift */; };
 		FAD26B492A9D17E7004BDB4C /* AboutPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26B482A9D17E7004BDB4C /* AboutPersonViewController.swift */; };
 		FAD26B4B2A9D1808004BDB4C /* LastFilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26B4A2A9D1808004BDB4C /* LastFilesViewController.swift */; };
@@ -98,12 +94,10 @@
 		B6E7C0F4647693485C46081D /* Pods_SkillBoxDisk_SkillBoxDiskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkillBoxDisk_SkillBoxDiskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D79A77CA43A26DED93D400FF /* Pods-SkillBoxDiskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkillBoxDiskTests.debug.xcconfig"; path = "Target Support Files/Pods-SkillBoxDiskTests/Pods-SkillBoxDiskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E2FB233E3A8973F29A26E64A /* Pods-SkillBoxDisk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkillBoxDisk.release.xcconfig"; path = "Target Support Files/Pods-SkillBoxDisk/Pods-SkillBoxDisk.release.xcconfig"; sourceTree = "<group>"; };
-		FA18F90A2B3C5C6900987512 /* FileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileTableViewCell.swift; sourceTree = "<group>"; };
 		FA2A52752AAB6015005E5300 /* LastUploadsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastUploadsModel.swift; sourceTree = "<group>"; };
 		FA2A52772AAB606C005E5300 /* LastUploadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastUploadsViewController.swift; sourceTree = "<group>"; };
 		FA2A52792AAB62D8005E5300 /* LastUploadsRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastUploadsRoute.swift; sourceTree = "<group>"; };
 		FA2FE9162AA6694C00777C99 /* AllFilesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFilesViewModel.swift; sourceTree = "<group>"; };
-		FA3CC6E92B4095AB00CF214C /* FileDiskModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDiskModels.swift; sourceTree = "<group>"; };
 		FA3CC6EC2B409F3B00CF214C /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		FA45EE032AA9D021005785A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FA45EE052AA9D2FE005785A2 /* Extention Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extention Localize.swift"; sourceTree = "<group>"; };
@@ -151,11 +145,9 @@
 		FAD26B232A9CDA46004BDB4C /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		FAD26B252A9CDA6F004BDB4C /* OnboardingPagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPagesController.swift; sourceTree = "<group>"; };
 		FAD26B272A9CDAE9004BDB4C /* ExtentionsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionsUI.swift; sourceTree = "<group>"; };
-		FAD26B292A9CDB41004BDB4C /* ExtentOnbordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentOnbordingView.swift; sourceTree = "<group>"; };
 		FAD26B2B2A9CDB6B004BDB4C /* ExtentOnbordingPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentOnbordingPages.swift; sourceTree = "<group>"; };
 		FAD26B2D2A9CDBDD004BDB4C /* LogoTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoTypeView.swift; sourceTree = "<group>"; };
 		FAD26B2F2A9CDC50004BDB4C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		FAD26B312A9CDCA2004BDB4C /* LoginExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginExtention.swift; sourceTree = "<group>"; };
 		FAD26B462A9D17CC004BDB4C /* AllFilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFilesViewController.swift; sourceTree = "<group>"; };
 		FAD26B482A9D17E7004BDB4C /* AboutPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPersonViewController.swift; sourceTree = "<group>"; };
 		FAD26B4A2A9D1808004BDB4C /* LastFilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFilesViewController.swift; sourceTree = "<group>"; };
@@ -289,8 +281,6 @@
 				FAD26AD52A9CC5F4004BDB4C /* SkillBoxDisk */,
 				FA3CC6EB2B409EDD00CF214C /* AuthorizationGroup */,
 				FA45EE042AA9D021005785A2 /* Localizable.strings */,
-				FA18F90A2B3C5C6900987512 /* FileTableViewCell.swift */,
-				FA3CC6E92B4095AB00CF214C /* FileDiskModels.swift */,
 				FA44F83B2AFC2A7100EE292C /* APIGroupe */,
 				FAFA11342AC4A2A5006FA9AD /* CoreData */,
 				FAD26B0C2A9CC65E004BDB4C /* ViewColtrollers */,
@@ -376,7 +366,6 @@
 			isa = PBXGroup;
 			children = (
 				FAD26B272A9CDAE9004BDB4C /* ExtentionsUI.swift */,
-				FAD26B292A9CDB41004BDB4C /* ExtentOnbordingView.swift */,
 				FAD26B2B2A9CDB6B004BDB4C /* ExtentOnbordingPages.swift */,
 				FA45EE052AA9D2FE005785A2 /* Extention Localize.swift */,
 			);
@@ -417,7 +406,6 @@
 			children = (
 				FAD26B2F2A9CDC50004BDB4C /* LoginViewController.swift */,
 				FA929D8A2AA7B91D00BA67C9 /* LoginModel.swift */,
-				FAD26B312A9CDCA2004BDB4C /* LoginExtention.swift */,
 			);
 			path = LoginGroop;
 			sourceTree = "<group>";
@@ -711,7 +699,6 @@
 				FAD26B302A9CDC50004BDB4C /* LoginViewController.swift in Sources */,
 				FAD26B162A9CC739004BDB4C /* Transition.swift in Sources */,
 				FA2A52762AAB6015005E5300 /* LastUploadsModel.swift in Sources */,
-				FAD26B322A9CDCA2004BDB4C /* LoginExtention.swift in Sources */,
 				FA2A527A2AAB62D8005E5300 /* LastUploadsRoute.swift in Sources */,
 				FAD26B142A9CC71B004BDB4C /* ModalTransition.swift in Sources */,
 				FAD26B1A2A9CD92D004BDB4C /* PushTransition.swift in Sources */,
@@ -721,7 +708,6 @@
 				FA2FE9172AA6694C00777C99 /* AllFilesViewModel.swift in Sources */,
 				FAD26B262A9CDA6F004BDB4C /* OnboardingPagesController.swift in Sources */,
 				FAD26B222A9CDA07004BDB4C /* CoreViewController.swift in Sources */,
-				FA3CC6EA2B4095AB00CF214C /* FileDiskModels.swift in Sources */,
 				FAD26B282A9CDAE9004BDB4C /* ExtentionsUI.swift in Sources */,
 				FAD26B472A9D17CC004BDB4C /* AllFilesViewController.swift in Sources */,
 				FAD26B182A9CC758004BDB4C /* EmptyTransition.swift in Sources */,
@@ -752,10 +738,8 @@
 				FAD26B1D2A9CD975004BDB4C /* AnimatedTransition.swift in Sources */,
 				FA612C7C2BEA6CA10073B797 /* AllFileTableViewCell.swift in Sources */,
 				FAD26B102A9CC6B7004BDB4C /* DefaltRoute.swift in Sources */,
-				FA18F90B2B3C5C6900987512 /* FileTableViewCell.swift in Sources */,
 				FA929D802AA76A0500BA67C9 /* LastFilesModel.swift in Sources */,
 				FAD26B2C2A9CDB6B004BDB4C /* ExtentOnbordingPages.swift in Sources */,
-				FAD26B2A2A9CDB41004BDB4C /* ExtentOnbordingView.swift in Sources */,
 				FAD26B122A9CC6E7004BDB4C /* LoginRoute.swift in Sources */,
 				FA45EE092AA9E35B005785A2 /* NamedFilesModel.swift in Sources */,
 				FA2A52782AAB606C005E5300 /* LastUploadsViewController.swift in Sources */,

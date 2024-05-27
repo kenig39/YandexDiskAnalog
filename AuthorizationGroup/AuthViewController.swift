@@ -84,7 +84,7 @@ extension AuthViewController: WKNavigationDelegate {
                 UserDefaults.standard.set(token, forKey: "token")
                 UserDefaults.standard.set(true, forKey: "userIsLogged")
             }
-            dismiss(animated: true)
+            viewModel?.openTabBar()
             }
         do {
             decisionHandler(.allow)

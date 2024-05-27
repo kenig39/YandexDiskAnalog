@@ -6,27 +6,25 @@ import UIKit
 
 
 final class LoginViewController: UIViewController {
-//    let viewModel: LoginModel
-//
-//    init(viewModel: LoginModel) {
-//        self.viewModel = viewModel
-//        super .init(nibName: nil, bundle: nil)
-//    }
-//
-//    required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
-//
+    let viewModel: LoginModel
+
+    init(viewModel: LoginModel) {
+        self.viewModel = viewModel
+        super .init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
   
-    let loginButton = makeButton(withText: "Войти".localizedText())
+  
     
       override func viewDidLoad() {
           super.viewDidLoad()
           constraints()
           
-         
-
-          loginButton.addTarget(self, action: #selector(openItemsList), for: .touchUpInside)
+    
       }
     
     @objc func openItemsList(){

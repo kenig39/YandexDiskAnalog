@@ -39,11 +39,11 @@ extension LoginViewController {
     }
     
     
-    func constraints() {
-        view.addSubview(loginButton)
-        loginButton.translatesAutoresizingMaskIntoConstraints = false
-        loginButton.frame(forAlignmentRect: CGRect(x: 0, y: 0, width: 250, height: 50))
-        loginButton.center = view.center
-        
-    }
+//    func constraints() {
+//        view.addSubview(loginButton)
+//        loginButton.translatesAutoresizingMaskIntoConstraints = false
+//        loginButton.frame(forAlignmentRect: CGRect(x: 0, y: 0, width: 250, height: 50))
+//        loginButton.center = view.center
+//        
+//    }
 }

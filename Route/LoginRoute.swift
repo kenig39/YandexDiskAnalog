@@ -7,29 +7,29 @@
 
 import UIKit
 
-//protocol LoginRoute {
-//    func openLogin()
-//}
-//
-//extension LoginRoute where Self: Router {
-//    func openLogin(transition: Transition) {
-//        let router = DefaultRouter(rootTransition: EmptyTransition())
-//        let viewModel = LoginViewModel(router: router)
-//        let viewController = LoginViewController(viewModel: viewModel)
-//        router.root = viewController
-//
-//        let navigation = UINavigationController(rootViewController: viewController)
-//        navigation.tabBarItem = TabsView.allfiles.item
-//      return navigation
-//    }
-//
-//
-//}
-//
-//extension DefaultRouter: LoginRoute {
-//    func openLogin() {
-//        root?.tabBarController?.selectedIndex = TabsView.allfiles.index
-//
-//    }
-//}
+protocol LoginRoute {
+    func openLogin()
+}
+
+extension LoginRoute where Self: Router {
+    func openLogin(transition: Transition) {
+        let router = DefaultRouter(rootTransition: EmptyTransition())
+        let viewModel = LoginModel(router: router)
+        let viewController = LoginViewController(viewModel: viewModel)
+        router.root = viewController
+
+        let navigation = UINavigationController(rootViewController: viewController)
+        navigation.tabBarItem = TabsView.allfiles.item
+      return navigation
+    }
+
+
+}
+
+extension DefaultRouter: LoginRoute {
+    func openLogin() {
+        root?.tabBarController?.selectedIndex = TabsView.allfiles.index
+
+    }
+}
 

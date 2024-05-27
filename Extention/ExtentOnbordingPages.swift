@@ -21,12 +21,12 @@ extension OnboadrdingPages{
             let page3 = OnBoardingViewController(imageName: "folder3",
                                                  titleText: "Делитесь вашими фаилами с друзьями".localizedText())
        
-        let page4 = LoginViewController()
+          
             
             pages.append(page1)
             pages.append(page2)
             pages.append(page3)
-            pages.append(page4)
+           // pages.append(page4)
             
             setViewControllers([pages[initialPage]], direction: .forward, animated: true, completion: nil)
         }

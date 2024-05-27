@@ -22,8 +22,8 @@ final class AuthViewController: UIViewController, AuthViewControllerDelegate{
     
     
     weak var delegate: AuthViewControllerDelegate?
-    var token: String? = UserDefaults.standard.string(forKey: "token")
     var clientID: String = "6ab311e2b11f4669b455674832317d57"
+    var token: String? = UserDefaults.standard.string(forKey: "token")
     var userIsLogged: Bool = UserDefaults.standard.bool(forKey: "userIsLogged")
     
 
@@ -34,10 +34,11 @@ final class AuthViewController: UIViewController, AuthViewControllerDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        webViewSetup()
         setupViews()
     }
 
-private func WebViewSetup() {
+private func webViewSetup() {
     let webConfig = WKWebViewConfiguration()
     var webview = WKWebView(frame: .zero, configuration: webConfig)
     webView = webview

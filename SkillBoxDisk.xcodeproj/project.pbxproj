@@ -67,7 +67,7 @@
 		FAD26B472A9D17CC004BDB4C /* AllFilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26B462A9D17CC004BDB4C /* AllFilesViewController.swift */; };
 		FAD26B492A9D17E7004BDB4C /* AboutPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26B482A9D17E7004BDB4C /* AboutPersonViewController.swift */; };
 		FAD26B4B2A9D1808004BDB4C /* LastFilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26B4A2A9D1808004BDB4C /* LastFilesViewController.swift */; };
-		FAD26B4F2A9D3A46004BDB4C /* TapBarRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26B4E2A9D3A46004BDB4C /* TapBarRoute.swift */; };
+		FAD26B4F2A9D3A46004BDB4C /* TabBarRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26B4E2A9D3A46004BDB4C /* TabBarRoute.swift */; };
 		FAD309B82BE6CCFC00867460 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD309B72BE6CCFC00867460 /* Model.swift */; };
 /* End PBXBuildFile section */
 
@@ -159,7 +159,7 @@
 		FAD26B462A9D17CC004BDB4C /* AllFilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFilesViewController.swift; sourceTree = "<group>"; };
 		FAD26B482A9D17E7004BDB4C /* AboutPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPersonViewController.swift; sourceTree = "<group>"; };
 		FAD26B4A2A9D1808004BDB4C /* LastFilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFilesViewController.swift; sourceTree = "<group>"; };
-		FAD26B4E2A9D3A46004BDB4C /* TapBarRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBarRoute.swift; sourceTree = "<group>"; };
+		FAD26B4E2A9D3A46004BDB4C /* TabBarRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRoute.swift; sourceTree = "<group>"; };
 		FAD309B72BE6CCFC00867460 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -248,6 +248,7 @@
 				FA9457922C00B3840079E850 /* ServiceProtocol.swift */,
 				FA9457942C011B110079E850 /* APIError.swift */,
 				FA9201112C03D4B0003FC16B /* AllFilesAPI.swift */,
+				FAD309B72BE6CCFC00867460 /* Model.swift */,
 			);
 			path = APIGroupe;
 			sourceTree = "<group>";
@@ -286,7 +287,6 @@
 			isa = PBXGroup;
 			children = (
 				FAD26AD52A9CC5F4004BDB4C /* SkillBoxDisk */,
-				FAD309B72BE6CCFC00867460 /* Model.swift */,
 				FA3CC6EB2B409EDD00CF214C /* AuthorizationGroup */,
 				FA45EE042AA9D021005785A2 /* Localizable.strings */,
 				FA18F90A2B3C5C6900987512 /* FileTableViewCell.swift */,
@@ -354,7 +354,7 @@
 				FA45EE0C2AA9E4B8005785A2 /* NameFilesRoute.swift */,
 				FA929D882AA79C8100BA67C9 /* LastFileRoute.swift */,
 				FA929D862AA76FDF00BA67C9 /* AboutPersonRoute.swift */,
-				FAD26B4E2A9D3A46004BDB4C /* TapBarRoute.swift */,
+				FAD26B4E2A9D3A46004BDB4C /* TabBarRoute.swift */,
 				FA2A52792AAB62D8005E5300 /* LastUploadsRoute.swift */,
 			);
 			path = Route;
@@ -725,7 +725,7 @@
 				FAD26B282A9CDAE9004BDB4C /* ExtentionsUI.swift in Sources */,
 				FAD26B472A9D17CC004BDB4C /* AllFilesViewController.swift in Sources */,
 				FAD26B182A9CC758004BDB4C /* EmptyTransition.swift in Sources */,
-				FAD26B4F2A9D3A46004BDB4C /* TapBarRoute.swift in Sources */,
+				FAD26B4F2A9D3A46004BDB4C /* TabBarRoute.swift in Sources */,
 				FAD26B1F2A9CD9B2004BDB4C /* FadeAnimatedTransition.swift in Sources */,
 				FAD26B492A9D17E7004BDB4C /* AboutPersonViewController.swift in Sources */,
 				FA9457952C011B110079E850 /* APIError.swift in Sources */,

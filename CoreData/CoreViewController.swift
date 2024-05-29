@@ -7,23 +7,27 @@
 
 import UIKit
 
-class CoreViewController: UIViewController{
+class CoreViewController: UIViewController {
+    
+    
     override func viewDidLoad() {
-       super.viewDidLoad()
+        super.viewDidLoad()
     }
     
+    
     override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        if !Coredata.shared.isNewUser(){
-          let vc = OnboadrdingPages()
-            vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: true)
-        } else {
-            var viewController = UIViewController()
-              let router = DefaultRouter(rootTransition: PushTransition())
-                viewController = router.showTabBar()
-                 viewController.modalPresentationStyle = .fullScreen
-            present(viewController, animated: true)
+        firstScrenFunc()
+    }
+    
+    func firstScrenFunc() {
+        var VC = UIViewController()
+        let router = DefaultRouter(rootTransition: EmptyTransition())
+        if Coredata.shared.isNewUser() == true {
+              VC = OnboadrdingPages()
+            VC.modalPresentationStyle = .fullScreen
+            present(VC, animated: true)
+        } else if Coredata.shared.loginedUser() == false {
+            VC = router.showTabBar()
         }
     }
 }
@@ -31,12 +35,12 @@ class CoreViewController: UIViewController{
 class Coredata {
     static let shared = Coredata()
     
-    func isNewUser() -> Bool{
-        return !UserDefaults.standard.bool(forKey: "didSee")
+    func isNewUser() -> Bool {
+        return !UserDefaults.standard.bool(forKey: "newUser")
     }
     
-    func loginedUser(){
-        UserDefaults.standard.set(true, forKey: "didSee")
+    func loginedUser() -> Bool {
+      return  UserDefaults.standard.bool(forKey: "userIsLogged")
     }
 }
 

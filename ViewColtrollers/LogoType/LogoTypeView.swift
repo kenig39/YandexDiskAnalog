@@ -6,25 +6,21 @@ import UIKit
 
 final class LogoTypeViewController: UIViewController{
     
+    
+    private let logoText = UILabel()
    
-    lazy var logoImageView: UIImageView = {
-        let imageView = UIImageView(frame: CGRect(x: 100, y: 50, width: 250, height: 250))
-        imageView.image = UIImage(named: "Vector")
-       return imageView
-    }()
+    private let logoImageView = UIImageView()
   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-       
-        view.addSubview(logoImageView)
         
     }
     
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        logoImageView.center = view.center
         DispatchQueue.main.asyncAfter(deadline: .now()+1, execute: {
             self.animate()
         })
@@ -54,6 +50,29 @@ final class LogoTypeViewController: UIViewController{
                 self.present(vc, animated: true)
            }
         })
+    }
+    
+    func setupUI() {
+        logoText.text = "Skill Drive"
+        logoText.font = UIFont.boldSystemFont(ofSize: 20)
+        logoText.textColor = UIColor.blue
+        
+        logoImageView.image = UIImage(named: "Vector")
+        
+        [logoText, logoImageView].forEach { views in
+            views.translatesAutoresizingMaskIntoConstraints = false
+            view.addSubview(views)
+            
+            logoText.snp.makeConstraints { make in
+                make.top.equalTo(view.safeAreaLayoutGuide.snp.bottom).inset(50)
+                make.centerX.equalTo(view)
+            }
+            
+            logoImageView.snp.makeConstraints { make in
+                <#code#>
+            }
+        }
+        
     }
 
 }

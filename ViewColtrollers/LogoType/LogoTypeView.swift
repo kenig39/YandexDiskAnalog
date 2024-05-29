@@ -7,24 +7,27 @@ import UIKit
 final class LogoTypeViewController: UIViewController{
     
     
-    private let logoText = UILabel()
    
     private let logoImageView = UIImageView()
   
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .white
-        
-    }
-    
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        setupConstrains()
         DispatchQueue.main.asyncAfter(deadline: .now()+1, execute: {
             self.animate()
         })
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .white
+        setupUI()
+      
+    }
+    
+  
     
     private func animate(){
         UIView.animate(withDuration: 1.25, animations: {
@@ -36,7 +39,7 @@ final class LogoTypeViewController: UIViewController{
                                               , y: diffY,
                                               width: size,
                                               height: size)
-          
+            
         })
         
         
@@ -48,33 +51,33 @@ final class LogoTypeViewController: UIViewController{
                 let vc = CoreViewController()
                 vc.modalPresentationStyle = .fullScreen
                 self.present(vc, animated: true)
-           }
+            }
         })
+    
     }
     
-    func setupUI() {
-        logoText.text = "Skill Drive"
-        logoText.font = UIFont.boldSystemFont(ofSize: 20)
-        logoText.textColor = UIColor.blue
+    private func setupUI() {
         
         logoImageView.image = UIImage(named: "Vector")
         
-        [logoText, logoImageView].forEach { views in
-            views.translatesAutoresizingMaskIntoConstraints = false
-            view.addSubview(views)
-            
-            logoText.snp.makeConstraints { make in
-                make.top.equalTo(view.safeAreaLayoutGuide.snp.bottom).inset(50)
-                make.centerX.equalTo(view)
-            }
-            
-            logoImageView.snp.makeConstraints { make in
-                <#code#>
-            }
-        }
-        
+        logoImageView.translatesAutoresizingMaskIntoConstraints = false
+            view.addSubview(logoImageView)
     }
+         
+   private  func setupConstrains() {
+            
+             logoImageView.snp.makeConstraints { make in
+                 make.top.equalTo(view.snp.top).inset(200)
+                 make.centerX.equalTo(view)
+                 make.width.equalTo(250)
+                 make.height.equalTo(250)
+             }
+         }
 
+    
+   
+    
+  
 }
 
 

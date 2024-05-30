@@ -8,30 +8,36 @@ final class LogoTypeViewController: UIViewController{
     
     
    
-    private let logoImageView = UIImageView()
-  
+    
+     lazy var logoImageView: UIImageView = {
+         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 250, height: 250))
+         imageView.image = UIImage(named: "Vector")
+        return imageView
+     }()
+   
+     
+     override func viewDidLoad() {
+         super.viewDidLoad()
+         view.backgroundColor = .white
+         
+         logoImageView.center = view.center
+         view.addSubview(logoImageView)
+         
+     }
+     
     
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        setupConstrains()
         DispatchQueue.main.asyncAfter(deadline: .now()+1, execute: {
             self.animate()
         })
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .white
-        setupUI()
-      
-    }
-    
   
     
     private func animate(){
         UIView.animate(withDuration: 1.25, animations: {
-            let size = self.view.frame.size.width * 1.76
+            let size = self.view.frame.size.width * 3.5
             let diffX = size - self.view.frame.size.width
             let diffY = self.view.frame.size.height - size
             
@@ -56,24 +62,7 @@ final class LogoTypeViewController: UIViewController{
     
     }
     
-    private func setupUI() {
-        
-        logoImageView.image = UIImage(named: "Vector")
-        
-        logoImageView.translatesAutoresizingMaskIntoConstraints = false
-            view.addSubview(logoImageView)
-    }
-         
-   private  func setupConstrains() {
-            
-             logoImageView.snp.makeConstraints { make in
-                 make.top.equalTo(view.snp.top).inset(200)
-                 make.centerX.equalTo(view)
-                 make.width.equalTo(250)
-                 make.height.equalTo(250)
-             }
-         }
-
+  
     
    
     

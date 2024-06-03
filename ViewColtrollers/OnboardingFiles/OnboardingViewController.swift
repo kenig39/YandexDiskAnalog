@@ -9,17 +9,16 @@ import UIKit
 
 
 class OnBoardingViewController: UIViewController{
-    let stackView = UIStackView()
     
+    let stackView = UIStackView()
     let imageView = UIImageView()
     let titleLabel = UILabel()
-    let subtitleLabel = UILabel()
     
     init(imageName: String, titleText: String) {
         super.init(nibName: nil, bundle: nil)
         imageView.image = UIImage(named: imageName)
         titleLabel.text = titleText
-        // subtitleLabel.text = subtitleText
+        
     }
     
     required init?(coder: NSCoder) {
@@ -66,6 +65,7 @@ class OnBoardingViewController: UIViewController{
         }
         
         titleLabel.snp.makeConstraints { make in
+            make.width.equalTo(60)
             make.leading.equalTo(view.snp.leading).multipliedBy(1)
             make.trailing.equalTo(view.snp.trailing).multipliedBy(1)
         }

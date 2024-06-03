@@ -14,10 +14,9 @@ class OnboadrdingPages: UIPageViewController{
       let pageControl = UIPageControl()
       let initialPage = 0
 
-      // animations
-      var pageControlBottomAnchor: NSLayoutConstraint?
-      var skipButtonTopAnchor: NSLayoutConstraint?
-      var nextButtonTopAnchor: NSLayoutConstraint?
+    var pageControlBottomAnchor: NSLayoutConstraint?
+    var skipButtonTopAnchor: NSLayoutConstraint?
+    var nextButtonTopAnchor: NSLayoutConstraint?
       
       override func viewDidLoad() {
           super.viewDidLoad()
@@ -54,50 +53,50 @@ class OnboadrdingPages: UIPageViewController{
     
     
     func style() {
-         // pageControl.translatesAutoresizingMaskIntoConstraints = false
+        
           pageControl.currentPageIndicatorTintColor = .black
           pageControl.pageIndicatorTintColor = .systemGray2
           pageControl.numberOfPages = pages.count
           pageControl.currentPage = initialPage
 
-         // skipButton.translatesAutoresizingMaskIntoConstraints = false
+         
           skipButton.setTitleColor(.systemBlue, for: .normal)
-        skipButton.setTitle("Назад".localizedText(), for: .normal)
+          skipButton.setTitle("Назад".localizedText(), for: .normal)
           skipButton.addTarget(self, action: #selector(skipTapped(_:)), for: .primaryActionTriggered)
 
-         // nextButton.translatesAutoresizingMaskIntoConstraints = false
+        
           nextButton.setTitleColor(.systemBlue, for: .normal)
-        nextButton.setTitle("Далее".localizedText(), for: .normal)
+          nextButton.setTitle("Далее".localizedText(), for: .normal)
           nextButton.addTarget(self, action: #selector(nextTapped(_:)), for: .primaryActionTriggered)
       }
     
     func layout() {
-          
+        
         [pageControl, skipButton, nextButton].forEach { subview in
             subview.translatesAutoresizingMaskIntoConstraints = false
             view.addSubview(subview)
             
         }
-           
-           NSLayoutConstraint.activate([
-               pageControl.widthAnchor.constraint(equalTo: view.widthAnchor),
-               pageControl.heightAnchor.constraint(equalToConstant: 20),
-               pageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-
-               
-               skipButton.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 2),
-
-               
-               view.trailingAnchor.constraint(equalToSystemSpacingAfter: nextButton.trailingAnchor, multiplier: 2),
-           ])
-        pageControlBottomAnchor = view.bottomAnchor.constraint(equalToSystemSpacingBelow: pageControl.bottomAnchor, multiplier: 2)
-              skipButtonTopAnchor = skipButton.topAnchor.constraint(equalToSystemSpacingBelow: view.safeAreaLayoutGuide.topAnchor, multiplier: 2)
-              nextButtonTopAnchor = nextButton.topAnchor.constraint(equalToSystemSpacingBelow: view.safeAreaLayoutGuide.topAnchor, multiplier: 2)
-              
-              pageControlBottomAnchor?.isActive = true
-              skipButtonTopAnchor?.isActive = true
-              nextButtonTopAnchor?.isActive = true
-          }
+        
+        pageControl.snp.makeConstraints { make in
+            make.width.equalTo(150)
+            make.height.equalTo(30)
+            make.centerX.equalTo(view.snp.centerX)
+            make.bottom.equalTo(view.snp.bottom).inset(50)
+        }
+        
+        skipButton.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).multipliedBy(2)
+            make.leading.equalTo(view.snp.leading).inset(20)
+        }
+        
+        nextButton.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).multipliedBy(2)
+            make.trailing.equalTo(view.snp.trailing).inset(20)
+        }
+        
+        
+    }
     
     
     
@@ -177,7 +176,7 @@ extension OnboadrdingPages: UIPageViewControllerDelegate{
      }
 
      private func showControls() {
-         pageControlBottomAnchor?.constant = 16
+        pageControlBottomAnchor?.constant = 16
          skipButtonTopAnchor?.constant = 16
          nextButtonTopAnchor?.constant = 16
      }

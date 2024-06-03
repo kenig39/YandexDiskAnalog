@@ -6,7 +6,7 @@
 //
 import UIKit
 
-class OnboadrdingPages: UIPageViewController{
+class OnboadrdingPages: UIPageViewController {
     var pages = [UIViewController]()
       
       let skipButton = UIButton()

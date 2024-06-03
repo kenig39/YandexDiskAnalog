@@ -60,27 +60,13 @@ class OnBoardingViewController: UIViewController{
             make.centerY.equalTo(view.snp.centerY)
         }
         
-        stackView.snp.makeConstraints { make in
+        imageView.snp.makeConstraints { make in
             make.height.equalTo(view.snp.width).multipliedBy(0.5)
         }
-        
         titleLabel.snp.makeConstraints { make in
-            make.width.equalTo(60)
             make.leading.equalTo(view.snp.leading).multipliedBy(1)
             make.trailing.equalTo(view.snp.trailing).multipliedBy(1)
         }
         
-        //
-        //           NSLayoutConstraint.activate([
-        //
-        //               stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-        //               stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-        //
-        //               imageView.heightAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.5),
-        //
-        //               titleLabel.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 1),
-        //               view.trailingAnchor.constraint(equalToSystemSpacingAfter: titleLabel.trailingAnchor, multiplier: 1),
-        //                     ])
-        //                 }
     }
 }

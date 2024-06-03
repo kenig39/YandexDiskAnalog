@@ -10,6 +10,9 @@
 		099F213BF2D0FECAD425CDA1 /* Pods_SkillBoxDiskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78AE3432A0E2073FA2262C2E /* Pods_SkillBoxDiskTests.framework */; };
 		50179EE918376F96CC1BECAA /* Pods_SkillBoxDisk_SkillBoxDiskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E7C0F4647693485C46081D /* Pods_SkillBoxDisk_SkillBoxDiskUITests.framework */; };
 		E7628DE4CBABD5C17FAFAEFD /* Pods_SkillBoxDisk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C58819A3D13586B4524DE21 /* Pods_SkillBoxDisk.framework */; };
+		FA1190F92C0E626F007ED4D5 /* OnboardingRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1190F82C0E626F007ED4D5 /* OnboardingRoute.swift */; };
+		FA1190FB2C0E64A9007ED4D5 /* NameFilesRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1190FA2C0E64A9007ED4D5 /* NameFilesRoute.swift */; };
+		FA1190FF2C0E64EA007ED4D5 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1190FE2C0E64EA007ED4D5 /* OnboardingModel.swift */; };
 		FA2A52762AAB6015005E5300 /* LastUploadsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A52752AAB6015005E5300 /* LastUploadsModel.swift */; };
 		FA2A52782AAB606C005E5300 /* LastUploadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A52772AAB606C005E5300 /* LastUploadsViewController.swift */; };
 		FA2A527A2AAB62D8005E5300 /* LastUploadsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A52792AAB62D8005E5300 /* LastUploadsRoute.swift */; };
@@ -19,7 +22,6 @@
 		FA45EE062AA9D2FE005785A2 /* Extention Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45EE052AA9D2FE005785A2 /* Extention Localize.swift */; };
 		FA45EE092AA9E35B005785A2 /* NamedFilesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45EE082AA9E35B005785A2 /* NamedFilesModel.swift */; };
 		FA45EE0B2AA9E387005785A2 /* NamedFIlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45EE0A2AA9E387005785A2 /* NamedFIlesViewController.swift */; };
-		FA45EE0D2AA9E4B8005785A2 /* NameFilesRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45EE0C2AA9E4B8005785A2 /* NameFilesRoute.swift */; };
 		FA612C7C2BEA6CA10073B797 /* AllFileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA612C7B2BEA6CA10073B797 /* AllFileTableViewCell.swift */; };
 		FA612C7E2BEA97140073B797 /* LastFileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA612C7D2BEA97140073B797 /* LastFileTableViewCell.swift */; };
 		FA9201102C03CAAC003FC16B /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92010F2C03CAAC003FC16B /* AuthViewModel.swift */; };
@@ -93,6 +95,9 @@
 		B6E7C0F4647693485C46081D /* Pods_SkillBoxDisk_SkillBoxDiskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkillBoxDisk_SkillBoxDiskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D79A77CA43A26DED93D400FF /* Pods-SkillBoxDiskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkillBoxDiskTests.debug.xcconfig"; path = "Target Support Files/Pods-SkillBoxDiskTests/Pods-SkillBoxDiskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E2FB233E3A8973F29A26E64A /* Pods-SkillBoxDisk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkillBoxDisk.release.xcconfig"; path = "Target Support Files/Pods-SkillBoxDisk/Pods-SkillBoxDisk.release.xcconfig"; sourceTree = "<group>"; };
+		FA1190F82C0E626F007ED4D5 /* OnboardingRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRoute.swift; sourceTree = "<group>"; };
+		FA1190FA2C0E64A9007ED4D5 /* NameFilesRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NameFilesRoute.swift; path = ../../../../.Trash/NameFilesRoute.swift; sourceTree = "<group>"; };
+		FA1190FE2C0E64EA007ED4D5 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		FA2A52752AAB6015005E5300 /* LastUploadsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastUploadsModel.swift; sourceTree = "<group>"; };
 		FA2A52772AAB606C005E5300 /* LastUploadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastUploadsViewController.swift; sourceTree = "<group>"; };
 		FA2A52792AAB62D8005E5300 /* LastUploadsRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastUploadsRoute.swift; sourceTree = "<group>"; };
@@ -102,7 +107,6 @@
 		FA45EE052AA9D2FE005785A2 /* Extention Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extention Localize.swift"; sourceTree = "<group>"; };
 		FA45EE082AA9E35B005785A2 /* NamedFilesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedFilesModel.swift; sourceTree = "<group>"; };
 		FA45EE0A2AA9E387005785A2 /* NamedFIlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedFIlesViewController.swift; sourceTree = "<group>"; };
-		FA45EE0C2AA9E4B8005785A2 /* NameFilesRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameFilesRoute.swift; sourceTree = "<group>"; };
 		FA612C7B2BEA6CA10073B797 /* AllFileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFileTableViewCell.swift; sourceTree = "<group>"; };
 		FA612C7D2BEA97140073B797 /* LastFileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFileTableViewCell.swift; sourceTree = "<group>"; };
 		FA92010F2C03CAAC003FC16B /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
@@ -336,10 +340,11 @@
 			isa = PBXGroup;
 			children = (
 				FAD26B0D2A9CC68A004BDB4C /* Route.swift */,
+				FA1190F82C0E626F007ED4D5 /* OnboardingRoute.swift */,
 				FAD26B0F2A9CC6B7004BDB4C /* DefaltRoute.swift */,
 				FAD26B112A9CC6E7004BDB4C /* LoginRoute.swift */,
 				FA929D842AA76CE700BA67C9 /* AllFilesRoute.swift */,
-				FA45EE0C2AA9E4B8005785A2 /* NameFilesRoute.swift */,
+				FA1190FA2C0E64A9007ED4D5 /* NameFilesRoute.swift */,
 				FA929D882AA79C8100BA67C9 /* LastFileRoute.swift */,
 				FA929D862AA76FDF00BA67C9 /* AboutPersonRoute.swift */,
 				FAD26B4E2A9D3A46004BDB4C /* TabBarRoute.swift */,
@@ -393,6 +398,7 @@
 			isa = PBXGroup;
 			children = (
 				FAD26B232A9CDA46004BDB4C /* OnboardingViewController.swift */,
+				FA1190FE2C0E64EA007ED4D5 /* OnboardingModel.swift */,
 				FAD26B252A9CDA6F004BDB4C /* OnboardingPagesController.swift */,
 			);
 			path = OnboardingFiles;
@@ -727,17 +733,19 @@
 				FA94578F2C00ACF20079E850 /* TableCellDefault.swift in Sources */,
 				FA929D852AA76CE700BA67C9 /* AllFilesRoute.swift in Sources */,
 				FAD26B4B2A9D1808004BDB4C /* LastFilesViewController.swift in Sources */,
-				FA45EE0D2AA9E4B8005785A2 /* NameFilesRoute.swift in Sources */,
 				FA3CC6ED2B409F3B00CF214C /* AuthViewController.swift in Sources */,
 				FA612C7E2BEA97140073B797 /* LastFileTableViewCell.swift in Sources */,
 				FA929D8B2AA7B91D00BA67C9 /* LoginModel.swift in Sources */,
 				FA9201122C03D4B0003FC16B /* AllFilesAPI.swift in Sources */,
 				FAD26B1D2A9CD975004BDB4C /* AnimatedTransition.swift in Sources */,
 				FA612C7C2BEA6CA10073B797 /* AllFileTableViewCell.swift in Sources */,
+				FA1190FB2C0E64A9007ED4D5 /* NameFilesRoute.swift in Sources */,
+				FA1190F92C0E626F007ED4D5 /* OnboardingRoute.swift in Sources */,
 				FAD26B102A9CC6B7004BDB4C /* DefaltRoute.swift in Sources */,
 				FA929D802AA76A0500BA67C9 /* LastFilesModel.swift in Sources */,
 				FAD26B122A9CC6E7004BDB4C /* LoginRoute.swift in Sources */,
 				FA45EE092AA9E35B005785A2 /* NamedFilesModel.swift in Sources */,
+				FA1190FF2C0E64EA007ED4D5 /* OnboardingModel.swift in Sources */,
 				FA2A52782AAB606C005E5300 /* LastUploadsViewController.swift in Sources */,
 				FAD26B242A9CDA46004BDB4C /* OnboardingViewController.swift in Sources */,
 				FA9457912C00B1B00079E850 /* TableViewDefaultControllerViewController.swift in Sources */,

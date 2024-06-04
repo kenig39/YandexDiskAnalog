@@ -6,9 +6,16 @@
 //
 import UIKit
 
-protocol PA
+protocol PageViewControllerProtocol: AnyObject {
+    var viewModel: PageViewModelProtocol? {get set}
+    var newUser: Bool {get set}
+}
 
-class OnboadrdingPages: UIPageViewController {
+class OnboadrdingPages: UIPageViewController, PageViewControllerProtocol {
+   
+    var viewModel: PageViewModelProtocol?
+    var newUser = UserDefaults.standard.bool(forKey: "newUser")
+    
     var pages = [UIViewController]()
       
       let skipButton = UIButton()
@@ -19,7 +26,15 @@ class OnboadrdingPages: UIPageViewController {
     var pageControlBottomAnchor: NSLayoutConstraint?
     var skipButtonTopAnchor: NSLayoutConstraint?
     var nextButtonTopAnchor: NSLayoutConstraint?
-      
+    
+    init(viewModel: PageViewModelProtocol) {
+        self.viewModel = viewModel
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
       override func viewDidLoad() {
           super.viewDidLoad()
         

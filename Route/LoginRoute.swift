@@ -9,6 +9,7 @@ import UIKit
 
 protocol LoginRoute {
     func openLogin()
+    
 }
 
 extension LoginRoute where Self: Router {

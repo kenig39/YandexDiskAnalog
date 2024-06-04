@@ -6,6 +6,8 @@
 //
 import UIKit
 
+protocol PA
+
 class OnboadrdingPages: UIPageViewController {
     var pages = [UIViewController]()
       
@@ -39,13 +41,11 @@ class OnboadrdingPages: UIPageViewController {
                                                  titleText: NSLocalizedString("Доступ к файлам без интернета", comment:""))
             let page3 = OnBoardingViewController(imageName: "folder3",
                                                  titleText: "Делитесь вашими фаилами с друзьями".localizedText())
-       
-          
             
             pages.append(page1)
             pages.append(page2)
             pages.append(page3)
-           // pages.append(page4)
+          
             
             setViewControllers([pages[initialPage]], direction: .forward, animated: true, completion: nil)
         }

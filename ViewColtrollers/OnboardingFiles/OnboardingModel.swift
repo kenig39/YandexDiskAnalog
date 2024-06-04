@@ -7,8 +7,12 @@
 
 import Foundation
 
+protocol PageViewModelProtocol: AnyObject {
+    func openLogin()
+}
+
 final class OnboardingModel {
-    typealias Routes = OnboardingRoute & Closable
+    typealias Routes = LoginRoute & Closable
     let router: Routes
     
     init(router: Routes){
@@ -16,6 +20,6 @@ final class OnboardingModel {
     }
     
     func openLogin(){
-       
+        router.openLogin()
     }
 }

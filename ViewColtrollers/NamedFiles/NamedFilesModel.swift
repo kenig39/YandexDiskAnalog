@@ -8,7 +8,7 @@
 import Foundation
 
 final class NamedFilesModel{
-    typealias Router = NameFilesRoute & Closable
+    typealias Router = Closable & NameFilesRoute
     let router: Router
     
     init(router: Router) {

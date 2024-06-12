@@ -6,12 +6,8 @@
 //
 import UIKit
 
-protocol PageViewControllerProtocol: AnyObject {
-    var viewModel: PageViewModelProtocol? {get set}
-    var newUser: Bool {get set}
-}
 
-class OnboadrdingPages: UIPageViewController, PageViewControllerProtocol {
+class OnboadrdingPages: UIPageViewController {
    
     var viewModel: PageViewModelProtocol?
     var newUser = UserDefaults.standard.bool(forKey: "newUser")
@@ -27,9 +23,16 @@ class OnboadrdingPages: UIPageViewController, PageViewControllerProtocol {
     var skipButtonTopAnchor: NSLayoutConstraint?
     var nextButtonTopAnchor: NSLayoutConstraint?
     
+    
+    
     init(viewModel: PageViewModelProtocol) {
-        self.viewModel = viewModel
+        super.init(transitionStyle: .scroll, navigationOrientation: .horizontal)
     }
+    
+//    init(viewModel: PageViewModelProtocol) {
+//        super.init(nibName: nil, bundle: nil)
+//        self.viewModel = viewModel
+//    }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -128,11 +131,16 @@ class OnboadrdingPages: UIPageViewController, PageViewControllerProtocol {
           animateControlsIfNeeded()
       }
       
-      @objc func nextTapped(_ sender: UIButton) {
-          pageControl.currentPage += 1
-          goToNextPage()
-          animateControlsIfNeeded()
-      }
+    @objc func nextTapped(_ sender: UIButton) {
+        if pageControl.currentPage < pages.count - 1 {
+        pageControl.currentPage += 1
+        goToNextPage()
+        animateControlsIfNeeded()
+           } else {
+               UserDefaults.standard.set(false, forKey: "newUser")
+               viewModel?.openLogin()
+        }
+    }
 }
 
 extension OnboadrdingPages: UIPageViewControllerDataSource{

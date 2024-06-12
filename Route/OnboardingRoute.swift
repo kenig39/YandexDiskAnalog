@@ -15,7 +15,7 @@ extension OnboardingRoute where Self: Router {
     func makePage() -> UIPageViewController {
         let router = DefaultRouter(rootTransition: EmptyTransition())
         let viewModel = OnboardingModel(router: router)
-        let viewController = OnboadrdingPages(viewModel: viewModel)
+        let viewController = OnboadrdingPages(viewModel: viewModel as! PageViewModelProtocol)
         router.root = viewController
         return viewController
     }

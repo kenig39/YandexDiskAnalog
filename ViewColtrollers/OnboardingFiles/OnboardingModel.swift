@@ -7,9 +7,6 @@
 
 import Foundation
 
-protocol PageViewModelProtocol: AnyObject {
-    func openLogin()
-}
 
 final class OnboardingModel {
     typealias Routes = LoginRoute & Closable

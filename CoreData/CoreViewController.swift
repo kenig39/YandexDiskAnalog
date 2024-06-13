@@ -23,7 +23,7 @@ class CoreViewController: UIViewController {
         var VC = UIViewController()
         let router = DefaultRouter(rootTransition: EmptyTransition())
         if Coredata.shared.isNewUser() == true {
-              VC = OnboadrdingPages()
+            VC = router.onboardingPage()
             VC.modalPresentationStyle = .fullScreen
             present(VC, animated: true)
         } else if Coredata.shared.loginedUser() == false {

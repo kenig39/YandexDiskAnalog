@@ -40,7 +40,7 @@ final class AuthViewController: UIViewController, AuthViewControllerDelegate{
 
 private func webViewSetup() {
     let webConfig = WKWebViewConfiguration()
-    var webview = WKWebView(frame: .zero, configuration: webConfig)
+    let webview = WKWebView(frame: .zero, configuration: webConfig)
     webView = webview
     view = webView
     guard let reguest = viewModel?.loginAuth() else { return }

@@ -5,11 +5,13 @@
 //  Created by Alex on 28.08.2023.
 //
 import UIKit
+import SnapKit
+
 
 
 class OnboadrdingPages: UIPageViewController {
    
-    var viewModel: PageViewModelProtocol?
+    var viewModel: OnboardingModel
     var newUser = UserDefaults.standard.bool(forKey: "newUser")
     
     var pages = [UIViewController]()
@@ -25,23 +27,18 @@ class OnboadrdingPages: UIPageViewController {
     
     
     
-    init(viewModel: PageViewModelProtocol) {
+    init(viewModel: OnboardingModel) {
+        self.viewModel = viewModel
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal)
     }
     
-//    init(viewModel: PageViewModelProtocol) {
-//        super.init(nibName: nil, bundle: nil)
-//        self.viewModel = viewModel
-//    }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
       override func viewDidLoad() {
           super.viewDidLoad()
-        
-          
           setup()
           style()
           layout()
@@ -138,7 +135,7 @@ class OnboadrdingPages: UIPageViewController {
         animateControlsIfNeeded()
            } else {
                UserDefaults.standard.set(false, forKey: "newUser")
-               viewModel?.openLogin()
+               viewModel.openLogin()
         }
     }
 }

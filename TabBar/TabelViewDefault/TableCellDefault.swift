@@ -77,8 +77,6 @@ class TableCellDefault: UITableViewCell {
             make.top.equalTo(snp.top).inset(5)
             make.right.equalTo(snp.right).inset(20)
         }
-
-     //   activityIndicator.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         
     }
 }

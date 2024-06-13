@@ -18,6 +18,7 @@ extension LoginRoute where Self: Router {
         let viewModel = LoginModel(router: router)
         let viewController = LoginViewController(viewModel: viewModel)
         router.root = viewController
+        route(to: viewController, as: transition)
         
     }
       

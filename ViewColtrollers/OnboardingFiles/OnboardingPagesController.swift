@@ -49,19 +49,22 @@ class OnboadrdingPages: UIPageViewController {
             delegate = self
             
             pageControl.addTarget(self, action: #selector(pageControlTapped(_:)), for: .valueChanged)
+        
+         
 
             let page1 = OnBoardingViewController(imageName: "folder1",
-                                                 titleText: NSLocalizedString("Теперь все ваши документы в одном местe", comment: ""))
+                                                 titleText: NSLocalizedString("Теперь все ваши документы в одном местe", comment: ""), buttonText: "")
             let page2 = OnBoardingViewController(imageName: "folder2",
-                                                 titleText: NSLocalizedString("Доступ к файлам без интернета", comment:""))
+                                                 titleText: NSLocalizedString("Доступ к файлам без интернета", comment:""), buttonText: "")
             let page3 = OnBoardingViewController(imageName: "folder3",
-                                                 titleText: "Делитесь вашими фаилами с друзьями".localizedText())
-            
-            pages.append(page1)
-            pages.append(page2)
-            pages.append(page3)
-          
-            
+                                                 titleText: "Делитесь вашими фаилами с друзьями".localizedText(), buttonText: "")
+           let page4 = OnBoardingViewController(imageName: "login", titleText: "Войти ли зарегистрироваться", buttonText: "Войти".localizedText())
+        
+        
+        [page1, page2, page3, page4].forEach { page in
+            pages.append(page)
+        }
+       
             setViewControllers([pages[initialPage]], direction: .forward, animated: true, completion: nil)
         }
 
@@ -87,9 +90,9 @@ class OnboadrdingPages: UIPageViewController {
     
     func layout() {
         
-        [pageControl, skipButton, nextButton].forEach { subview in
-            subview.translatesAutoresizingMaskIntoConstraints = false
-            view.addSubview(subview)
+        [pageControl, skipButton, nextButton].forEach { uiview in
+            uiview.translatesAutoresizingMaskIntoConstraints = false
+            view.addSubview(uiview)
             
         }
         
@@ -102,15 +105,15 @@ class OnboadrdingPages: UIPageViewController {
         
         skipButton.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top).multipliedBy(2)
-            make.leading.equalTo(view.snp.leading).inset(20)
+            make.leading.equalTo(view.snp.leading).multipliedBy(2)
         }
         
         nextButton.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top).multipliedBy(2)
-            make.trailing.equalTo(view.snp.trailing).inset(20)
+            make.trailing.equalTo(view.snp.trailing).multipliedBy(2)
         }
         
-        
+       
     }
     
     
@@ -122,21 +125,17 @@ class OnboadrdingPages: UIPageViewController {
 
       @objc func skipTapped(_ sender: UIButton) {
           let lastPage = pages.count - 1
-          pageControl.currentPage = lastPage
-          
-          goToSpecificPage(index: lastPage, ofViewControllers: pages)
-          animateControlsIfNeeded()
+                   pageControl.currentPage = lastPage
+                   
+                   goToSpecificPage(index: lastPage, ofViewControllers: pages)
+                   animateControlsIfNeeded()
+
       }
       
-    @objc func nextTapped(_ sender: UIButton) {
-        if pageControl.currentPage < pages.count - 1 {
+      @objc func nextTapped(_ sender: UIButton) {
         pageControl.currentPage += 1
         goToNextPage()
         animateControlsIfNeeded()
-           } else {
-               UserDefaults.standard.set(false, forKey: "newUser")
-               viewModel.openLogin()
-        }
     }
 }
 

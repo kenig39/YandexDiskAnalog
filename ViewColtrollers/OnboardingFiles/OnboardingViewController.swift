@@ -14,11 +14,15 @@ class OnBoardingViewController: UIViewController{
     let stackView = UIStackView()
     let imageView = UIImageView()
     let titleLabel = UILabel()
+    let enterButton = UIButton()
     
-    init(imageName: String, titleText: String) {
+    init(imageName: String, titleText: String, buttonText: String) {
         super.init(nibName: nil, bundle: nil)
         imageView.image = UIImage(named: imageName)
         titleLabel.text = titleText
+        enterButton.setTitle(buttonText, for: .normal)
+        
+        
         
     }
     
@@ -33,28 +37,38 @@ class OnBoardingViewController: UIViewController{
         layout()
     }
     
+    @objc func openAuthList() {
+        
+    }
+    
+    
     func style() {
         
-        stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.alignment = .center
         stackView.spacing = 20
+        stackView.translatesAutoresizingMaskIntoConstraints = false
         
-        imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
         
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.font = UIFont.preferredFont(forTextStyle: .title1)
         titleLabel.textAlignment = .center
         titleLabel.numberOfLines = 0
         
+        enterButton.addTarget(self, action: #selector(openAuthList), for: .touchUpInside)
+        enterButton.tintColor = UIColor.black
+        enterButton.layer.cornerRadius = 5
+        
+        [imageView, titleLabel, enterButton].forEach{ uiview in
+            uiview.translatesAutoresizingMaskIntoConstraints = false
+            stackView.addArrangedSubview(uiview)
+        }
+        view.addSubview(stackView)
+    
+        
     }
     
     func layout() {
-        stackView.addArrangedSubview(imageView)
-        stackView.addArrangedSubview(titleLabel)
-        
-        view.addSubview(stackView)
         
         stackView.snp.makeConstraints { make in
             make.centerX.equalTo(view.snp.centerX)
@@ -68,6 +82,15 @@ class OnBoardingViewController: UIViewController{
             make.leading.equalTo(view.snp.leading).multipliedBy(1)
             make.trailing.equalTo(view.snp.trailing).multipliedBy(1)
         }
+        
+        
+        enterButton.snp.makeConstraints { make in
+            make.top.equalTo(imageView.snp.bottom).inset(50)
+            make.centerX.equalTo(self.view)
+            make.width.equalTo(100)
+            make.height.equalTo(50)
+        }
+       
         
     }
 }

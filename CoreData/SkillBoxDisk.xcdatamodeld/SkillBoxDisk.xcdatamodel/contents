@@ -3,15 +3,21 @@
     <entity name="AllFiles" representedClassName="AllFiles" syncable="YES" codeGenerationType="class">
         <attribute name="created" optional="YES" attributeType="String"/>
         <attribute name="file" optional="YES" attributeType="String"/>
+        <attribute name="modified" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="path" optional="YES" attributeType="String"/>
+        <attribute name="preview" optional="YES" attributeType="String"/>
         <attribute name="size" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
     </entity>
     <entity name="LastFiles" representedClassName="LastFiles" syncable="YES" codeGenerationType="class">
         <attribute name="file" optional="YES" attributeType="String"/>
+        <attribute name="modified" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="path" optional="YES" attributeType="String"/>
+        <attribute name="prewiew" optional="YES" attributeType="String"/>
         <attribute name="size" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
     </entity>
     <entity name="PublishedFiles" representedClassName="PublishedFiles" syncable="YES" codeGenerationType="class">
         <attribute name="craeted" optional="YES" attributeType="String"/>

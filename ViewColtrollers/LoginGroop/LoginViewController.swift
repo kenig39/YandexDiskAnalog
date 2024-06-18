@@ -9,15 +9,21 @@ import SnapKit
 
 final class LoginViewController: UIViewController {
     
-    
-    let viewModel: LoginModel
-    
+   // let viewModel: LoginModel
     let loginButton = UIButton()
     let loginImage = UIImageView()
+    
+    
+//    init(viewModel: LoginModel) {
+//        self.viewModel = viewModel
+//        super.init(nibName: nil, bundle: nil)
+//    }
 
-    init(viewModel: LoginModel) {
-        self.viewModel = viewModel
-        super .init(nibName: nil, bundle: nil)
+    init(logImage: String, logButton: String) {
+        super.init(nibName: nil, bundle: nil)
+        loginImage.image = UIImage(named: logImage)
+        loginButton.setTitle(logButton, for: .normal)
+
     }
 
     required init?(coder: NSCoder) {
@@ -26,14 +32,11 @@ final class LoginViewController: UIViewController {
     
       override func viewDidLoad() {
           super.viewDidLoad()
-          
           setupUI()
-          
           constraints()
-    
       }
     
-    @objc func openItemsList(){
+    @objc func openAuthList() {
         
         let url = "https://oauth.yandex.ru/authorize?response_type=token&client_id=6ab311e2b11f4669b455674832317d57"
         
@@ -50,15 +53,20 @@ final class LoginViewController: UIViewController {
     }
     
     func setupUI() {
+        
+        loginImage.layer.cornerRadius = 5
+        loginImage.layer.borderColor = .init(red: 234, green: 26, blue: 122, alpha: 1)
+        loginImage.layer.borderWidth = 3
                 
+        loginButton.addTarget(self, action: #selector(openAuthList), for: .touchUpInside)
+        loginButton.tintColor = UIColor.black
+        loginButton.layer.cornerRadius = 5
+        loginButton.backgroundColor = UIColor.blue
         
-          
-           [loginImage, loginButton].forEach { views in
-            views.translatesAutoresizingMaskIntoConstraints = false
+           [loginImage, loginButton].forEach { uiview in
+            uiview.translatesAutoresizingMaskIntoConstraints = false
+               view.addSubview(uiview)
         }
-        
-        view.addSubview(loginImage)
-        view.addSubview(loginButton)
     }
     
         func constraints() {

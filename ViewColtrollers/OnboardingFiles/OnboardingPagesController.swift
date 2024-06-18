@@ -53,17 +53,16 @@ class OnboadrdingPages: UIPageViewController {
          
 
             let page1 = OnBoardingViewController(imageName: "folder1",
-                                                 titleText: NSLocalizedString("Теперь все ваши документы в одном местe", comment: ""), buttonText: "")
+                                                 titleText: NSLocalizedString("Теперь все ваши документы в одном местe", comment: ""))
             let page2 = OnBoardingViewController(imageName: "folder2",
-                                                 titleText: NSLocalizedString("Доступ к файлам без интернета", comment:""), buttonText: "")
+                                                 titleText: NSLocalizedString("Доступ к файлам без интернета", comment:""))
             let page3 = OnBoardingViewController(imageName: "folder3",
-                                                 titleText: "Делитесь вашими фаилами с друзьями".localizedText(), buttonText: "")
-           let page4 = OnBoardingViewController(imageName: "login", titleText: "Войти ли зарегистрироваться", buttonText: "Войти".localizedText())
+                                                 titleText: "Делитесь вашими фаилами с друзьями".localizedText())
+           let loginPage = LoginViewController(logImage: "login", logButton: "Enter".localizedText())
         
-        
-        [page1, page2, page3, page4].forEach { page in
+           [page1, page2, page3, loginPage].forEach { page in
             pages.append(page)
-        }
+           }
        
             setViewControllers([pages[initialPage]], direction: .forward, animated: true, completion: nil)
         }
@@ -93,7 +92,6 @@ class OnboadrdingPages: UIPageViewController {
         [pageControl, skipButton, nextButton].forEach { uiview in
             uiview.translatesAutoresizingMaskIntoConstraints = false
             view.addSubview(uiview)
-            
         }
         
         pageControl.snp.makeConstraints { make in
@@ -104,13 +102,13 @@ class OnboadrdingPages: UIPageViewController {
         }
         
         skipButton.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).multipliedBy(2)
-            make.leading.equalTo(view.snp.leading).multipliedBy(2)
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            make.leading.equalTo(view.snp.leading).inset(20)
         }
         
         nextButton.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).multipliedBy(2)
-            make.trailing.equalTo(view.snp.trailing).multipliedBy(2)
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            make.trailing.equalTo(view.snp.trailing).inset(20)
         }
         
        

@@ -9,14 +9,14 @@ import Foundation
 
 
 final class OnboardingModel {
-    typealias Routes = LoginRoute & Closable
+    typealias Routes = Closable
     let router: Routes
     
     init(router: Routes){
         self.router = router
     }
     
-    func openLogin(){
-        router.openLogin()
-    }
+//    func openLogin(){
+//        router.openLogin()
+//    }
 }

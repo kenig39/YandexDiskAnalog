@@ -24,6 +24,8 @@
 		FA4B28082C1A354B0006234C /* NameFilesRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B28072C1A354B0006234C /* NameFilesRoute.swift */; };
 		FA612C7C2BEA6CA10073B797 /* AllFileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA612C7B2BEA6CA10073B797 /* AllFileTableViewCell.swift */; };
 		FA612C7E2BEA97140073B797 /* LastFileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA612C7D2BEA97140073B797 /* LastFileTableViewCell.swift */; };
+		FA7AE7CF2C2615E40055FFF5 /* AllFilesModelSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7AE7CE2C2615E40055FFF5 /* AllFilesModelSave.swift */; };
+		FA7AE7D12C2616910055FFF5 /* AllFilesFetchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7AE7D02C2616910055FFF5 /* AllFilesFetchResult.swift */; };
 		FA9201102C03CAAC003FC16B /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92010F2C03CAAC003FC16B /* AuthViewModel.swift */; };
 		FA9201122C03D4B0003FC16B /* AllFilesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9201112C03D4B0003FC16B /* AllFilesAPI.swift */; };
 		FA929D7E2AA7684100BA67C9 /* AboutPersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA929D7D2AA7684100BA67C9 /* AboutPersonModel.swift */; };
@@ -110,6 +112,8 @@
 		FA4B28072C1A354B0006234C /* NameFilesRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameFilesRoute.swift; sourceTree = "<group>"; };
 		FA612C7B2BEA6CA10073B797 /* AllFileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFileTableViewCell.swift; sourceTree = "<group>"; };
 		FA612C7D2BEA97140073B797 /* LastFileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFileTableViewCell.swift; sourceTree = "<group>"; };
+		FA7AE7CE2C2615E40055FFF5 /* AllFilesModelSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFilesModelSave.swift; sourceTree = "<group>"; };
+		FA7AE7D02C2616910055FFF5 /* AllFilesFetchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFilesFetchResult.swift; sourceTree = "<group>"; };
 		FA92010F2C03CAAC003FC16B /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		FA9201112C03D4B0003FC16B /* AllFilesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFilesAPI.swift; sourceTree = "<group>"; };
 		FA929D7D2AA7684100BA67C9 /* AboutPersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPersonModel.swift; sourceTree = "<group>"; };
@@ -244,7 +248,6 @@
 				FA9457922C00B3840079E850 /* ServiceProtocol.swift */,
 				FA9457942C011B110079E850 /* APIError.swift */,
 				FA9201112C03D4B0003FC16B /* AllFilesAPI.swift */,
-				FAD309B72BE6CCFC00867460 /* Model.swift */,
 			);
 			path = APIGroupe;
 			sourceTree = "<group>";
@@ -256,6 +259,23 @@
 				FA45EE0A2AA9E387005785A2 /* NamedFIlesViewController.swift */,
 			);
 			path = NamedFiles;
+			sourceTree = "<group>";
+		};
+		FA7AE7CC2C2614900055FFF5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA7AE7CD2C2614A60055FFF5 /* AllFiles */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FA7AE7CD2C2614A60055FFF5 /* AllFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FA7AE7CE2C2615E40055FFF5 /* AllFilesModelSave.swift */,
+				FA7AE7D02C2616910055FFF5 /* AllFilesFetchResult.swift */,
+			);
+			path = AllFiles;
 			sourceTree = "<group>";
 		};
 		FA929D812AA76B0B00BA67C9 /* TabBar */ = {
@@ -456,9 +476,11 @@
 		FAFA11342AC4A2A5006FA9AD /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				FA7AE7CC2C2614900055FFF5 /* ViewControllers */,
 				FAD26B212A9CDA07004BDB4C /* CoreViewController.swift */,
 				FAD26ADF2A9CC5F5004BDB4C /* SkillBoxDisk.xcdatamodeld */,
 				FA96A0D12C1F78B00001E7C7 /* CoreDataManager.swift */,
+				FAD309B72BE6CCFC00867460 /* Model.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -732,6 +754,8 @@
 				FAD26AD72A9CC5F4004BDB4C /* AppDelegate.swift in Sources */,
 				FA929D7E2AA7684100BA67C9 /* AboutPersonModel.swift in Sources */,
 				FAD26B0E2A9CC68A004BDB4C /* Route.swift in Sources */,
+				FA7AE7CF2C2615E40055FFF5 /* AllFilesModelSave.swift in Sources */,
+				FA7AE7D12C2616910055FFF5 /* AllFilesFetchResult.swift in Sources */,
 				FAD26AD92A9CC5F4004BDB4C /* SceneDelegate.swift in Sources */,
 				FA929D872AA76FDF00BA67C9 /* AboutPersonRoute.swift in Sources */,
 				FA4B28082C1A354B0006234C /* NameFilesRoute.swift in Sources */,

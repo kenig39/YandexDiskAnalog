@@ -14,6 +14,8 @@
 		FA1190FF2C0E64EA007ED4D5 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1190FE2C0E64EA007ED4D5 /* OnboardingModel.swift */; };
 		FA194A942C56B33E00CB4C5B /* AllFilesInDisk+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA194A922C56B33E00CB4C5B /* AllFilesInDisk+CoreDataClass.swift */; };
 		FA194A952C56B33E00CB4C5B /* AllFilesInDisk+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA194A932C56B33E00CB4C5B /* AllFilesInDisk+CoreDataProperties.swift */; };
+		FA194A982C56B33E00CB4C5B /* LastFilesModelSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA194A972C56B33E00CB4C5B /* LastFilesModelSave.swift */; };
+		FA194A9B2C56B33E00CB4C5B /* PublishFilesModelSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA194A9A2C56B33E00CB4C5B /* PublishFilesModelSave.swift */; };
 		FA2A52762AAB6015005E5300 /* LastUploadsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A52752AAB6015005E5300 /* LastUploadsModel.swift */; };
 		FA2A52782AAB606C005E5300 /* LastUploadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A52772AAB606C005E5300 /* LastUploadsViewController.swift */; };
 		FA2A527A2AAB62D8005E5300 /* LastUploadsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A52792AAB62D8005E5300 /* LastUploadsRoute.swift */; };
@@ -103,6 +105,8 @@
 		FA1190FE2C0E64EA007ED4D5 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		FA194A922C56B33E00CB4C5B /* AllFilesInDisk+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AllFilesInDisk+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		FA194A932C56B33E00CB4C5B /* AllFilesInDisk+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AllFilesInDisk+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		FA194A972C56B33E00CB4C5B /* LastFilesModelSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFilesModelSave.swift; sourceTree = "<group>"; };
+		FA194A9A2C56B33E00CB4C5B /* PublishFilesModelSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishFilesModelSave.swift; sourceTree = "<group>"; };
 		FA2A52752AAB6015005E5300 /* LastUploadsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastUploadsModel.swift; sourceTree = "<group>"; };
 		FA2A52772AAB606C005E5300 /* LastUploadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastUploadsViewController.swift; sourceTree = "<group>"; };
 		FA2A52792AAB62D8005E5300 /* LastUploadsRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastUploadsRoute.swift; sourceTree = "<group>"; };
@@ -225,6 +229,22 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		FA194A962C56B33E00CB4C5B /* LastFilesCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FA194A972C56B33E00CB4C5B /* LastFilesModelSave.swift */,
+			);
+			path = LastFilesCoreData;
+			sourceTree = "<group>";
+		};
+		FA194A992C56B33E00CB4C5B /* PublishFilesCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FA194A9A2C56B33E00CB4C5B /* PublishFilesModelSave.swift */,
+			);
+			path = PublishFilesCoreData;
+			sourceTree = "<group>";
+		};
 		FA2A52742AAB5FF3005E5300 /* LastUploads */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,26 +286,28 @@
 		FA7AE7CC2C2614900055FFF5 /* CoreDataViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FA7AE7CD2C2614A60055FFF5 /* AllFilesInDisk */,
+				FA194A992C56B33E00CB4C5B /* PublishFilesCoreData */,
+				FA194A962C56B33E00CB4C5B /* LastFilesCoreData */,
+				FA7AE7CD2C2614A60055FFF5 /* AllFilesCoreData */,
 			);
 			path = CoreDataViewControllers;
 			sourceTree = "<group>";
 		};
-		FA7AE7CD2C2614A60055FFF5 /* AllFilesInDisk */ = {
+		FA7AE7CD2C2614A60055FFF5 /* AllFilesCoreData */ = {
 			isa = PBXGroup;
 			children = (
 				FA194A922C56B33E00CB4C5B /* AllFilesInDisk+CoreDataClass.swift */,
 				FA194A932C56B33E00CB4C5B /* AllFilesInDisk+CoreDataProperties.swift */,
 				FA7AE7CE2C2615E40055FFF5 /* AllFilesModelSave.swift */,
 			);
-			path = AllFilesInDisk;
+			path = AllFilesCoreData;
 			sourceTree = "<group>";
 		};
 		FA929D812AA76B0B00BA67C9 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				FA94578D2C00AC850079E850 /* TabelViewDefault */,
 				FA929D822AA76BFC00BA67C9 /* TabBarModel.swift */,
+				FA94578D2C00AC850079E850 /* TabelViewDefault */,
 				FAD26B3E2A9D166D004BDB4C /* LastFilesViews */,
 				FAD26B422A9D172D004BDB4C /* AboutPersonViewControllers */,
 				FAD26B432A9D174F004BDB4C /* AllFilesViewControllers */,
@@ -743,6 +765,7 @@
 				FAD26B282A9CDAE9004BDB4C /* ExtentionsUI.swift in Sources */,
 				FAD26B472A9D17CC004BDB4C /* AllFilesViewController.swift in Sources */,
 				FAD26B182A9CC758004BDB4C /* EmptyTransition.swift in Sources */,
+				FA194A9B2C56B33E00CB4C5B /* PublishFilesModelSave.swift in Sources */,
 				FAD26B4F2A9D3A46004BDB4C /* TabBarRoute.swift in Sources */,
 				FAD26B1F2A9CD9B2004BDB4C /* FadeAnimatedTransition.swift in Sources */,
 				FAD26B492A9D17E7004BDB4C /* AboutPersonViewController.swift in Sources */,
@@ -762,6 +785,7 @@
 				FAD26AD92A9CC5F4004BDB4C /* SceneDelegate.swift in Sources */,
 				FA929D872AA76FDF00BA67C9 /* AboutPersonRoute.swift in Sources */,
 				FA4B28082C1A354B0006234C /* NameFilesRoute.swift in Sources */,
+				FA194A982C56B33E00CB4C5B /* LastFilesModelSave.swift in Sources */,
 				FA94578F2C00ACF20079E850 /* TableCellDefault.swift in Sources */,
 				FA929D852AA76CE700BA67C9 /* AllFilesRoute.swift in Sources */,
 				FAD26B4B2A9D1808004BDB4C /* LastFilesViewController.swift in Sources */,

@@ -12,6 +12,8 @@
 		E7628DE4CBABD5C17FAFAEFD /* Pods_SkillBoxDisk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C58819A3D13586B4524DE21 /* Pods_SkillBoxDisk.framework */; };
 		FA1190F92C0E626F007ED4D5 /* OnboardingRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1190F82C0E626F007ED4D5 /* OnboardingRoute.swift */; };
 		FA1190FF2C0E64EA007ED4D5 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1190FE2C0E64EA007ED4D5 /* OnboardingModel.swift */; };
+		FA194A942C56B33E00CB4C5B /* AllFilesInDisk+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA194A922C56B33E00CB4C5B /* AllFilesInDisk+CoreDataClass.swift */; };
+		FA194A952C56B33E00CB4C5B /* AllFilesInDisk+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA194A932C56B33E00CB4C5B /* AllFilesInDisk+CoreDataProperties.swift */; };
 		FA2A52762AAB6015005E5300 /* LastUploadsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A52752AAB6015005E5300 /* LastUploadsModel.swift */; };
 		FA2A52782AAB606C005E5300 /* LastUploadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A52772AAB606C005E5300 /* LastUploadsViewController.swift */; };
 		FA2A527A2AAB62D8005E5300 /* LastUploadsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A52792AAB62D8005E5300 /* LastUploadsRoute.swift */; };
@@ -25,7 +27,6 @@
 		FA612C7C2BEA6CA10073B797 /* AllFileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA612C7B2BEA6CA10073B797 /* AllFileTableViewCell.swift */; };
 		FA612C7E2BEA97140073B797 /* LastFileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA612C7D2BEA97140073B797 /* LastFileTableViewCell.swift */; };
 		FA7AE7CF2C2615E40055FFF5 /* AllFilesModelSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7AE7CE2C2615E40055FFF5 /* AllFilesModelSave.swift */; };
-		FA7AE7D12C2616910055FFF5 /* AllFilesFetchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7AE7D02C2616910055FFF5 /* AllFilesFetchResult.swift */; };
 		FA9201102C03CAAC003FC16B /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92010F2C03CAAC003FC16B /* AuthViewModel.swift */; };
 		FA9201122C03D4B0003FC16B /* AllFilesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9201112C03D4B0003FC16B /* AllFilesAPI.swift */; };
 		FA929D7E2AA7684100BA67C9 /* AboutPersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA929D7D2AA7684100BA67C9 /* AboutPersonModel.swift */; };
@@ -100,6 +101,8 @@
 		E2FB233E3A8973F29A26E64A /* Pods-SkillBoxDisk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkillBoxDisk.release.xcconfig"; path = "Target Support Files/Pods-SkillBoxDisk/Pods-SkillBoxDisk.release.xcconfig"; sourceTree = "<group>"; };
 		FA1190F82C0E626F007ED4D5 /* OnboardingRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRoute.swift; sourceTree = "<group>"; };
 		FA1190FE2C0E64EA007ED4D5 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		FA194A922C56B33E00CB4C5B /* AllFilesInDisk+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AllFilesInDisk+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		FA194A932C56B33E00CB4C5B /* AllFilesInDisk+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AllFilesInDisk+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		FA2A52752AAB6015005E5300 /* LastUploadsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastUploadsModel.swift; sourceTree = "<group>"; };
 		FA2A52772AAB606C005E5300 /* LastUploadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastUploadsViewController.swift; sourceTree = "<group>"; };
 		FA2A52792AAB62D8005E5300 /* LastUploadsRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastUploadsRoute.swift; sourceTree = "<group>"; };
@@ -113,7 +116,6 @@
 		FA612C7B2BEA6CA10073B797 /* AllFileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFileTableViewCell.swift; sourceTree = "<group>"; };
 		FA612C7D2BEA97140073B797 /* LastFileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFileTableViewCell.swift; sourceTree = "<group>"; };
 		FA7AE7CE2C2615E40055FFF5 /* AllFilesModelSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFilesModelSave.swift; sourceTree = "<group>"; };
-		FA7AE7D02C2616910055FFF5 /* AllFilesFetchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFilesFetchResult.swift; sourceTree = "<group>"; };
 		FA92010F2C03CAAC003FC16B /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		FA9201112C03D4B0003FC16B /* AllFilesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFilesAPI.swift; sourceTree = "<group>"; };
 		FA929D7D2AA7684100BA67C9 /* AboutPersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPersonModel.swift; sourceTree = "<group>"; };
@@ -261,21 +263,22 @@
 			path = NamedFiles;
 			sourceTree = "<group>";
 		};
-		FA7AE7CC2C2614900055FFF5 /* ViewControllers */ = {
+		FA7AE7CC2C2614900055FFF5 /* CoreDataViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FA7AE7CD2C2614A60055FFF5 /* AllFiles */,
+				FA7AE7CD2C2614A60055FFF5 /* AllFilesInDisk */,
 			);
-			path = ViewControllers;
+			path = CoreDataViewControllers;
 			sourceTree = "<group>";
 		};
-		FA7AE7CD2C2614A60055FFF5 /* AllFiles */ = {
+		FA7AE7CD2C2614A60055FFF5 /* AllFilesInDisk */ = {
 			isa = PBXGroup;
 			children = (
+				FA194A922C56B33E00CB4C5B /* AllFilesInDisk+CoreDataClass.swift */,
+				FA194A932C56B33E00CB4C5B /* AllFilesInDisk+CoreDataProperties.swift */,
 				FA7AE7CE2C2615E40055FFF5 /* AllFilesModelSave.swift */,
-				FA7AE7D02C2616910055FFF5 /* AllFilesFetchResult.swift */,
 			);
-			path = AllFiles;
+			path = AllFilesInDisk;
 			sourceTree = "<group>";
 		};
 		FA929D812AA76B0B00BA67C9 /* TabBar */ = {
@@ -476,11 +479,11 @@
 		FAFA11342AC4A2A5006FA9AD /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				FA7AE7CC2C2614900055FFF5 /* ViewControllers */,
-				FAD26B212A9CDA07004BDB4C /* CoreViewController.swift */,
-				FAD26ADF2A9CC5F5004BDB4C /* SkillBoxDisk.xcdatamodeld */,
-				FA96A0D12C1F78B00001E7C7 /* CoreDataManager.swift */,
 				FAD309B72BE6CCFC00867460 /* Model.swift */,
+				FA96A0D12C1F78B00001E7C7 /* CoreDataManager.swift */,
+				FAD26ADF2A9CC5F5004BDB4C /* SkillBoxDisk.xcdatamodeld */,
+				FAD26B212A9CDA07004BDB4C /* CoreViewController.swift */,
+				FA7AE7CC2C2614900055FFF5 /* CoreDataViewControllers */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -735,6 +738,7 @@
 				FAD26B2E2A9CDBDD004BDB4C /* LogoTypeView.swift in Sources */,
 				FA2FE9172AA6694C00777C99 /* AllFilesViewModel.swift in Sources */,
 				FAD26B262A9CDA6F004BDB4C /* OnboardingPagesController.swift in Sources */,
+				FA194A952C56B33E00CB4C5B /* AllFilesInDisk+CoreDataProperties.swift in Sources */,
 				FAD26B222A9CDA07004BDB4C /* CoreViewController.swift in Sources */,
 				FAD26B282A9CDAE9004BDB4C /* ExtentionsUI.swift in Sources */,
 				FAD26B472A9D17CC004BDB4C /* AllFilesViewController.swift in Sources */,
@@ -755,7 +759,6 @@
 				FA929D7E2AA7684100BA67C9 /* AboutPersonModel.swift in Sources */,
 				FAD26B0E2A9CC68A004BDB4C /* Route.swift in Sources */,
 				FA7AE7CF2C2615E40055FFF5 /* AllFilesModelSave.swift in Sources */,
-				FA7AE7D12C2616910055FFF5 /* AllFilesFetchResult.swift in Sources */,
 				FAD26AD92A9CC5F4004BDB4C /* SceneDelegate.swift in Sources */,
 				FA929D872AA76FDF00BA67C9 /* AboutPersonRoute.swift in Sources */,
 				FA4B28082C1A354B0006234C /* NameFilesRoute.swift in Sources */,
@@ -775,6 +778,7 @@
 				FA45EE092AA9E35B005785A2 /* NamedFilesModel.swift in Sources */,
 				FA1190FF2C0E64EA007ED4D5 /* OnboardingModel.swift in Sources */,
 				FA2A52782AAB606C005E5300 /* LastUploadsViewController.swift in Sources */,
+				FA194A942C56B33E00CB4C5B /* AllFilesInDisk+CoreDataClass.swift in Sources */,
 				FAD26B242A9CDA46004BDB4C /* OnboardingViewController.swift in Sources */,
 				FA9457912C00B1B00079E850 /* TableViewDefaultControllerViewController.swift in Sources */,
 			);

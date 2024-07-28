@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22G120" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="AllFilesInDisk" representedClassName="AllFilesInDisk" syncable="YES" codeGenerationType="class">
+    <entity name="AllFilesInDisk" representedClassName="AllFilesInDisk" syncable="YES">
         <attribute name="created" optional="YES" attributeType="String"/>
         <attribute name="file" optional="YES" attributeType="String"/>
+        <attribute name="mine_type" optional="YES" attributeType="String"/>
         <attribute name="modified" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="path" optional="YES" attributeType="String"/>
@@ -10,16 +11,18 @@
         <attribute name="size" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="type" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="LastFilesInDisk" representedClassName="LastFilesInDisk" syncable="YES" codeGenerationType="class">
+    <entity name="LastFilesInDisk" representedClassName="LastFilesInDisk" syncable="YES">
+        <attribute name="created" optional="YES" attributeType="String"/>
         <attribute name="file" optional="YES" attributeType="String"/>
+        <attribute name="mime_type" optional="YES" attributeType="String"/>
         <attribute name="modified" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="path" optional="YES" attributeType="String"/>
-        <attribute name="prewiew" optional="YES" attributeType="String"/>
+        <attribute name="preview" optional="YES" attributeType="String"/>
         <attribute name="size" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="type" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="PublishedFiles" representedClassName="PublishedFiles" syncable="YES" codeGenerationType="class">
+    <entity name="PublishedFiles" representedClassName="PublishedFiles" syncable="YES">
         <attribute name="craeted" optional="YES" attributeType="String"/>
         <attribute name="file" optional="YES" attributeType="String"/>
         <attribute name="mime_type" optional="YES" attributeType="String"/>

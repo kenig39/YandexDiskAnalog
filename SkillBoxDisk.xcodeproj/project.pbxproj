@@ -12,8 +12,6 @@
 		E7628DE4CBABD5C17FAFAEFD /* Pods_SkillBoxDisk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C58819A3D13586B4524DE21 /* Pods_SkillBoxDisk.framework */; };
 		FA1190F92C0E626F007ED4D5 /* OnboardingRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1190F82C0E626F007ED4D5 /* OnboardingRoute.swift */; };
 		FA1190FF2C0E64EA007ED4D5 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1190FE2C0E64EA007ED4D5 /* OnboardingModel.swift */; };
-		FA194A942C56B33E00CB4C5B /* AllFilesInDisk+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA194A922C56B33E00CB4C5B /* AllFilesInDisk+CoreDataClass.swift */; };
-		FA194A952C56B33E00CB4C5B /* AllFilesInDisk+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA194A932C56B33E00CB4C5B /* AllFilesInDisk+CoreDataProperties.swift */; };
 		FA194A982C56B33E00CB4C5B /* LastFilesModelSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA194A972C56B33E00CB4C5B /* LastFilesModelSave.swift */; };
 		FA194A9B2C56B33E00CB4C5B /* PublishFilesModelSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA194A9A2C56B33E00CB4C5B /* PublishFilesModelSave.swift */; };
 		FA2A52762AAB6015005E5300 /* LastUploadsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A52752AAB6015005E5300 /* LastUploadsModel.swift */; };
@@ -28,7 +26,13 @@
 		FA4B28082C1A354B0006234C /* NameFilesRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B28072C1A354B0006234C /* NameFilesRoute.swift */; };
 		FA612C7C2BEA6CA10073B797 /* AllFileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA612C7B2BEA6CA10073B797 /* AllFileTableViewCell.swift */; };
 		FA612C7E2BEA97140073B797 /* LastFileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA612C7D2BEA97140073B797 /* LastFileTableViewCell.swift */; };
-		FA7AE7CF2C2615E40055FFF5 /* AllFilesModelSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7AE7CE2C2615E40055FFF5 /* AllFilesModelSave.swift */; };
+		FA7416402C56C89200460B4B /* AllFilesInDisk+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA74163E2C56C89200460B4B /* AllFilesInDisk+CoreDataClass.swift */; };
+		FA7416412C56C89200460B4B /* AllFilesInDisk+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA74163F2C56C89200460B4B /* AllFilesInDisk+CoreDataProperties.swift */; };
+		FA7416442C56C8ED00460B4B /* LastFilesInDisk+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7416422C56C8ED00460B4B /* LastFilesInDisk+CoreDataClass.swift */; };
+		FA7416452C56C8ED00460B4B /* LastFilesInDisk+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7416432C56C8ED00460B4B /* LastFilesInDisk+CoreDataProperties.swift */; };
+		FA7416482C56C93A00460B4B /* PublishedFiles+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7416462C56C93A00460B4B /* PublishedFiles+CoreDataClass.swift */; };
+		FA7416492C56C93A00460B4B /* PublishedFiles+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7416472C56C93A00460B4B /* PublishedFiles+CoreDataProperties.swift */; };
+		FA74164B2C56C96900460B4B /* AllFilesModelSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA74164A2C56C96900460B4B /* AllFilesModelSave.swift */; };
 		FA9201102C03CAAC003FC16B /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92010F2C03CAAC003FC16B /* AuthViewModel.swift */; };
 		FA9201122C03D4B0003FC16B /* AllFilesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9201112C03D4B0003FC16B /* AllFilesAPI.swift */; };
 		FA929D7E2AA7684100BA67C9 /* AboutPersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA929D7D2AA7684100BA67C9 /* AboutPersonModel.swift */; };
@@ -103,8 +107,6 @@
 		E2FB233E3A8973F29A26E64A /* Pods-SkillBoxDisk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkillBoxDisk.release.xcconfig"; path = "Target Support Files/Pods-SkillBoxDisk/Pods-SkillBoxDisk.release.xcconfig"; sourceTree = "<group>"; };
 		FA1190F82C0E626F007ED4D5 /* OnboardingRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRoute.swift; sourceTree = "<group>"; };
 		FA1190FE2C0E64EA007ED4D5 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
-		FA194A922C56B33E00CB4C5B /* AllFilesInDisk+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AllFilesInDisk+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		FA194A932C56B33E00CB4C5B /* AllFilesInDisk+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AllFilesInDisk+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		FA194A972C56B33E00CB4C5B /* LastFilesModelSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFilesModelSave.swift; sourceTree = "<group>"; };
 		FA194A9A2C56B33E00CB4C5B /* PublishFilesModelSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishFilesModelSave.swift; sourceTree = "<group>"; };
 		FA2A52752AAB6015005E5300 /* LastUploadsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastUploadsModel.swift; sourceTree = "<group>"; };
@@ -119,7 +121,13 @@
 		FA4B28072C1A354B0006234C /* NameFilesRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameFilesRoute.swift; sourceTree = "<group>"; };
 		FA612C7B2BEA6CA10073B797 /* AllFileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFileTableViewCell.swift; sourceTree = "<group>"; };
 		FA612C7D2BEA97140073B797 /* LastFileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFileTableViewCell.swift; sourceTree = "<group>"; };
-		FA7AE7CE2C2615E40055FFF5 /* AllFilesModelSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFilesModelSave.swift; sourceTree = "<group>"; };
+		FA74163E2C56C89200460B4B /* AllFilesInDisk+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AllFilesInDisk+CoreDataClass.swift"; path = "SkillBoxDisk/AllFilesInDisk+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		FA74163F2C56C89200460B4B /* AllFilesInDisk+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AllFilesInDisk+CoreDataProperties.swift"; path = "SkillBoxDisk/AllFilesInDisk+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		FA7416422C56C8ED00460B4B /* LastFilesInDisk+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LastFilesInDisk+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FA7416432C56C8ED00460B4B /* LastFilesInDisk+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LastFilesInDisk+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FA7416462C56C93A00460B4B /* PublishedFiles+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PublishedFiles+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FA7416472C56C93A00460B4B /* PublishedFiles+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PublishedFiles+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FA74164A2C56C96900460B4B /* AllFilesModelSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFilesModelSave.swift; sourceTree = "<group>"; };
 		FA92010F2C03CAAC003FC16B /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		FA9201112C03D4B0003FC16B /* AllFilesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFilesAPI.swift; sourceTree = "<group>"; };
 		FA929D7D2AA7684100BA67C9 /* AboutPersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPersonModel.swift; sourceTree = "<group>"; };
@@ -232,6 +240,8 @@
 		FA194A962C56B33E00CB4C5B /* LastFilesCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				FA7416422C56C8ED00460B4B /* LastFilesInDisk+CoreDataClass.swift */,
+				FA7416432C56C8ED00460B4B /* LastFilesInDisk+CoreDataProperties.swift */,
 				FA194A972C56B33E00CB4C5B /* LastFilesModelSave.swift */,
 			);
 			path = LastFilesCoreData;
@@ -240,6 +250,8 @@
 		FA194A992C56B33E00CB4C5B /* PublishFilesCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				FA7416462C56C93A00460B4B /* PublishedFiles+CoreDataClass.swift */,
+				FA7416472C56C93A00460B4B /* PublishedFiles+CoreDataProperties.swift */,
 				FA194A9A2C56B33E00CB4C5B /* PublishFilesModelSave.swift */,
 			);
 			path = PublishFilesCoreData;
@@ -296,9 +308,9 @@
 		FA7AE7CD2C2614A60055FFF5 /* AllFilesCoreData */ = {
 			isa = PBXGroup;
 			children = (
-				FA194A922C56B33E00CB4C5B /* AllFilesInDisk+CoreDataClass.swift */,
-				FA194A932C56B33E00CB4C5B /* AllFilesInDisk+CoreDataProperties.swift */,
-				FA7AE7CE2C2615E40055FFF5 /* AllFilesModelSave.swift */,
+				FA74163E2C56C89200460B4B /* AllFilesInDisk+CoreDataClass.swift */,
+				FA74163F2C56C89200460B4B /* AllFilesInDisk+CoreDataProperties.swift */,
+				FA74164A2C56C96900460B4B /* AllFilesModelSave.swift */,
 			);
 			path = AllFilesCoreData;
 			sourceTree = "<group>";
@@ -328,16 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				FAD26AD52A9CC5F4004BDB4C /* SkillBoxDisk */,
-				FA3CC6EB2B409EDD00CF214C /* AuthorizationGroup */,
-				FA45EE042AA9D021005785A2 /* Localizable.strings */,
-				FA44F83B2AFC2A7100EE292C /* APIGroupe */,
-				FAFA11342AC4A2A5006FA9AD /* CoreData */,
-				FAD26B0C2A9CC65E004BDB4C /* ViewColtrollers */,
-				FA929D812AA76B0B00BA67C9 /* TabBar */,
-				FAD26B092A9CC616004BDB4C /* Route */,
-				FAD26B0A2A9CC624004BDB4C /* Transition */,
 				FA18F9092B3C5BDD00987512 /* Tests */,
-				FAD26B0B2A9CC64C004BDB4C /* Extention */,
 				FAD26AD42A9CC5F4004BDB4C /* Products */,
 				1DCD2B9242B00CEBB2B6A378 /* Pods */,
 				A4003C28B6CA7DD5DBE3B5EB /* Frameworks */,
@@ -357,11 +360,20 @@
 		FAD26AD52A9CC5F4004BDB4C /* SkillBoxDisk */ = {
 			isa = PBXGroup;
 			children = (
+				FA45EE042AA9D021005785A2 /* Localizable.strings */,
 				FAD26AD62A9CC5F4004BDB4C /* AppDelegate.swift */,
 				FAD26AD82A9CC5F4004BDB4C /* SceneDelegate.swift */,
 				FAD26AE22A9CC5F6004BDB4C /* Assets.xcassets */,
 				FAD26AE42A9CC5F6004BDB4C /* LaunchScreen.storyboard */,
 				FAD26AE72A9CC5F6004BDB4C /* Info.plist */,
+				FAD26B0B2A9CC64C004BDB4C /* Extention */,
+				FAD26B0A2A9CC624004BDB4C /* Transition */,
+				FAD26B092A9CC616004BDB4C /* Route */,
+				FA929D812AA76B0B00BA67C9 /* TabBar */,
+				FAD26B0C2A9CC65E004BDB4C /* ViewColtrollers */,
+				FAFA11342AC4A2A5006FA9AD /* CoreData */,
+				FA44F83B2AFC2A7100EE292C /* APIGroupe */,
+				FA3CC6EB2B409EDD00CF214C /* AuthorizationGroup */,
 			);
 			path = SkillBoxDisk;
 			sourceTree = "<group>";
@@ -751,7 +763,9 @@
 			files = (
 				FAD26B302A9CDC50004BDB4C /* LoginViewController.swift in Sources */,
 				FAD26B162A9CC739004BDB4C /* Transition.swift in Sources */,
+				FA74164B2C56C96900460B4B /* AllFilesModelSave.swift in Sources */,
 				FA2A52762AAB6015005E5300 /* LastUploadsModel.swift in Sources */,
+				FA7416492C56C93A00460B4B /* PublishedFiles+CoreDataProperties.swift in Sources */,
 				FA2A527A2AAB62D8005E5300 /* LastUploadsRoute.swift in Sources */,
 				FAD26B142A9CC71B004BDB4C /* ModalTransition.swift in Sources */,
 				FAD26B1A2A9CD92D004BDB4C /* PushTransition.swift in Sources */,
@@ -760,7 +774,6 @@
 				FAD26B2E2A9CDBDD004BDB4C /* LogoTypeView.swift in Sources */,
 				FA2FE9172AA6694C00777C99 /* AllFilesViewModel.swift in Sources */,
 				FAD26B262A9CDA6F004BDB4C /* OnboardingPagesController.swift in Sources */,
-				FA194A952C56B33E00CB4C5B /* AllFilesInDisk+CoreDataProperties.swift in Sources */,
 				FAD26B222A9CDA07004BDB4C /* CoreViewController.swift in Sources */,
 				FAD26B282A9CDAE9004BDB4C /* ExtentionsUI.swift in Sources */,
 				FAD26B472A9D17CC004BDB4C /* AllFilesViewController.swift in Sources */,
@@ -779,19 +792,23 @@
 				FA45EE062AA9D2FE005785A2 /* Extention Localize.swift in Sources */,
 				FA9457932C00B3840079E850 /* ServiceProtocol.swift in Sources */,
 				FAD26AD72A9CC5F4004BDB4C /* AppDelegate.swift in Sources */,
+				FA7416412C56C89200460B4B /* AllFilesInDisk+CoreDataProperties.swift in Sources */,
+				FA7416482C56C93A00460B4B /* PublishedFiles+CoreDataClass.swift in Sources */,
 				FA929D7E2AA7684100BA67C9 /* AboutPersonModel.swift in Sources */,
 				FAD26B0E2A9CC68A004BDB4C /* Route.swift in Sources */,
-				FA7AE7CF2C2615E40055FFF5 /* AllFilesModelSave.swift in Sources */,
 				FAD26AD92A9CC5F4004BDB4C /* SceneDelegate.swift in Sources */,
 				FA929D872AA76FDF00BA67C9 /* AboutPersonRoute.swift in Sources */,
 				FA4B28082C1A354B0006234C /* NameFilesRoute.swift in Sources */,
+				FA7416442C56C8ED00460B4B /* LastFilesInDisk+CoreDataClass.swift in Sources */,
 				FA194A982C56B33E00CB4C5B /* LastFilesModelSave.swift in Sources */,
 				FA94578F2C00ACF20079E850 /* TableCellDefault.swift in Sources */,
 				FA929D852AA76CE700BA67C9 /* AllFilesRoute.swift in Sources */,
+				FA7416402C56C89200460B4B /* AllFilesInDisk+CoreDataClass.swift in Sources */,
 				FAD26B4B2A9D1808004BDB4C /* LastFilesViewController.swift in Sources */,
 				FA3CC6ED2B409F3B00CF214C /* AuthViewController.swift in Sources */,
 				FA612C7E2BEA97140073B797 /* LastFileTableViewCell.swift in Sources */,
 				FA929D8B2AA7B91D00BA67C9 /* LoginModel.swift in Sources */,
+				FA7416452C56C8ED00460B4B /* LastFilesInDisk+CoreDataProperties.swift in Sources */,
 				FA9201122C03D4B0003FC16B /* AllFilesAPI.swift in Sources */,
 				FAD26B1D2A9CD975004BDB4C /* AnimatedTransition.swift in Sources */,
 				FA612C7C2BEA6CA10073B797 /* AllFileTableViewCell.swift in Sources */,
@@ -802,7 +819,6 @@
 				FA45EE092AA9E35B005785A2 /* NamedFilesModel.swift in Sources */,
 				FA1190FF2C0E64EA007ED4D5 /* OnboardingModel.swift in Sources */,
 				FA2A52782AAB606C005E5300 /* LastUploadsViewController.swift in Sources */,
-				FA194A942C56B33E00CB4C5B /* AllFilesInDisk+CoreDataClass.swift in Sources */,
 				FAD26B242A9CDA46004BDB4C /* OnboardingViewController.swift in Sources */,
 				FA9457912C00B1B00079E850 /* TableViewDefaultControllerViewController.swift in Sources */,
 			);

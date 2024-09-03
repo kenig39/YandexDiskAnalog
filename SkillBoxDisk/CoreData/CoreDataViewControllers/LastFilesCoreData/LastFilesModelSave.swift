@@ -11,6 +11,13 @@ import CoreData
 
 final class LastFilesModelSave {
     
+    private lazy var fetchedResultController : NSFetchedResultsController<LastFiles> = {
+        let fetchRequest = LastFiles.fetchRequest()
+        let sort = NSSortDescriptor(key:"name", ascending: true)
+        fetchRequest.sortDescriptors = [sort]
+        let fetchedResultController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: CoreDataManager.shared.context, sectionNameKeyPath: nil, cacheName: nil)
+        return fetchedResultController
+    }()
     
     
 }

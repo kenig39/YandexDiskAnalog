@@ -10,5 +10,6 @@ import UIKit
 class LastFileTableViewCell: TableCellDefault {
 
     static let identyfire = String(describing: LastFileTableViewCell.self)
+    
   
 }

@@ -69,7 +69,7 @@ class AboutPersonViewController: UIViewController {
     
     
     @objc func actionSheet(){
-        let actionsheet = UIAlertController(title: "Профиль".localizedText(), message: "", preferredStyle: .actionSheet)
+        let actionsheet = UIAlertController(title: "Выйти из профиля".localizedText(), message: "", preferredStyle: .actionSheet)
         actionsheet.addAction(UIAlertAction(title: "Выход".localizedText(), style: .destructive, handler: { _ in
             let action = UIAlertController(title: "Вы уверенны что хотите выйти из аккаунта".localizedText(), message: "Это сотрет все ваши данные".localizedText(), preferredStyle: .alert)
             

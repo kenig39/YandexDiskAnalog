@@ -45,16 +45,13 @@ class AboutPersonViewController: UIViewController {
     func buttonTap(){
         
         let lastUpLoad = UIButton(title: "Последние загрузки".localizedText(), target: self, selector: #selector(openLastUploads))
-        let changeLocal = UIButton(title: "Сменить язык".localizedText(), target: self, selector: #selector(changeLanguage))
-        
        
-        view.addSubviews(view: [changeLocal, lastUpLoad])
+       
+        view.addSubviews(view: [lastUpLoad])
         lastUpLoad.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 200).isActive = true
        // lastUpLoad.layer.cornerRadius = 5
         lastUpLoad.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 15).isActive = true
        
-        changeLocal.topAnchor.constraint(equalTo: lastUpLoad.bottomAnchor, constant: 10).isActive = true
-        changeLocal.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 15).isActive = true
 
     }
   
